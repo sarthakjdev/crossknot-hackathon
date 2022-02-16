@@ -1,6 +1,9 @@
 {
   "name": "crossknot-hackathon",
   "private": true,
+  "author": {
+    "name": "Crossknot's Team"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

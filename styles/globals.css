@@ -3,21 +3,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('../public/fonts/SegoeUIBold.ttf');
+  font-weight: 800;
+  font-style: normal;
+  }
+
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #FEFBEA;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }

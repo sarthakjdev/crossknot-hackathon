@@ -7,40 +7,50 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#2B2273',
-        secondary: '#FE0F9F'       
+        mainbg: '#FEFBEA',
+        primary: '#0EB29F',
+        primary_light: 'rgba(14, 178, 159, 0.3)',
+        primary_dark: '#075650',
+        secondary: '#656565',
+        card_light: '#F4C456', 
+        card_dark: '#F4C559', 
+        card_text: '#656565'
       },
       typography: {
         DEAFAULT: {
           css: {
           h1: {
-              fontFamily: 'Montserrat',
+              fontFamily: 'Product Sans',
           },
           h2: {
-              fontFamily: 'Montserrat',
+              fontFamily: 'Product Sans',
           },
           h3: {
-              fontFamily: 'Montserrat',
+              fontFamily: 'Product Sans',
           },
           h4: {
-              fontFamily: 'Montserrat',
+              fontFamily: 'Product Sans',
           },
           h5: {
-              fontFamily: 'Montserrat',
+              fontFamily: 'Product Sans',
           },
           h6: {
-              fontFamily: 'Montserrat',
+              fontFamily: 'Product Sans',
             },
           }
         }
       },
       fontFamily: {
-        primary: ['Poppins', 'sans-serif'],
-        secondary: ['Freehand', 'sans-serif']
+        primary: ['Segoe UI', 'sans-serif'],
+        secondary: ['Product Sans', 'sans-serif']
       },
       width: {
         quarter_past: '75%',
-        half: '50%'
+        half: '50%',
+        '70': '70%'
+      },
+      zIndex: {
+        '100': 100
       },
       screens: {
         '2xl': {'max': '1535px'},
