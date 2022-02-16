@@ -8,6 +8,8 @@
 
 export default function timer(){
     return (
-        
+        <section>
+            timer will be added here
+        </section>
     )
 }
