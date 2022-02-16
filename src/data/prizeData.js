@@ -1,6 +1,6 @@
-import firstIcon from '../images/prizes/first.svg'
-import secondIcon from '../images/prizes/second.svg'
-import thirdIcon from '../images/prizes/third.svg'
+import firstIcon from '../../public/images/prizes/first.svg'
+import secondIcon from '../../public/images/prizes/second.svg'
+import thirdIcon from '../../public/images/prizes/third.svg'
 
 
 module.exports = [

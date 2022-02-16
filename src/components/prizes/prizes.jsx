@@ -8,7 +8,7 @@ import SectionHead from '../sectionHeads'
 import PrizeCard from './prizeCard'
 
 
-import prizesData from '../../../public/data/prizeData'     // prizes data imported from the static file in the same project
+import prizesData from '../../data/prizeData'     // prizes data imported from the static file in the same project
 
 
 export default function Prize(){

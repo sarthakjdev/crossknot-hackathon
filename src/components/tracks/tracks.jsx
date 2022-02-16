@@ -8,7 +8,7 @@
 import SectionHead from '../sectionHeads'
 import TrackCard from './trackCard'
 
-import tracksData from '../../../public/data/trackData'
+import tracksData from '../../data/trackData'
 export default function Tracks(){
     return (
         <section className='flex flex-col my-8 mx-14 '>
