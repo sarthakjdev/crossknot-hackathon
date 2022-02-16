@@ -45,6 +45,8 @@ module.exports = {
         secondary: ['Product Sans', 'sans-serif']
       },
       width: {
+        '30': '30%',
+        '40': '40%',
         quarter_past: '75%',
         half: '50%',
         '70': '70%'

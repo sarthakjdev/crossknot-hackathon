@@ -4,7 +4,9 @@ import Link from "next/link";
 import { useEffect } from "react";
 import calendarIcon from "../../../public/images/calendar.svg";
 import locationIcon from "../../../public/images/location.svg";
-import landingPageImage from "../../../public/images/landingImage.svg";
+import landingPageImage from "../../../public/images/hero/landingImage.svg";
+
+import headingImage from "../../../public/images/hero/heading.svg"
 
 export default function HeroSection() {
   useEffect(() => {
@@ -28,9 +30,8 @@ export default function HeroSection() {
         {/* crossknot hacks heading */}
         <div className="relative flex  justify-center items-center">
           {/* <h1 className="absolute text-center text-8xl w-quarter_past stroke-text font-secondary font-extrabold md:m-auto md:text-6xl sm:text-4xl">Crossknot Hacks</h1> */}
-          <h1 className=" text-center text-8xl w-quarter_past text-primary font-secondary font-extrabold md:m-auto md:text-6xl sm:text-4xl">
-            Crossknot Hacks
-          </h1>
+          {/* <h1 className=" text-center text-8xl w-quarter_past text-primary font-secondary font-extrabold md:m-auto md:text-6xl sm:text-4xl">Crossknot Hacks</h1> */}
+          <Image src={headingImage} alt="crossknot heading" />
         </div>
 
         {/* time and place of the hackathon */}

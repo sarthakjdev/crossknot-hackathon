@@ -3,10 +3,11 @@ import Image from 'next/image'
 import aboutImage from '../../../public/images/about.svg'
 
 
-import tracksData from '../../../public/data/trackData'
+import tracksData from '../../data/trackData'
+
 export default function About(){
     return (
-        <section className='flex flex-col my-8 mx-14'>
+        <section className='flex flex-col my-8 mx-14 sm:mx-2'>
             <SectionHead sectionName="about us"/>
             <div className='flex  items-center justify-evenly m-auto gap-6 lg:flex-col-reverse '> 
                 <div className='w-quarter_past mr-14 lg:m-auto'>

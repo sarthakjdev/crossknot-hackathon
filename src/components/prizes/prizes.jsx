@@ -13,11 +13,10 @@ import prizesData from '../../data/prizeData'     // prizes data imported from t
 
 export default function Prize(){
     return (
-        <section className=' mx-14 my-8'>
+        <section className='mx-14 my-8 sm:mx-6'>
             <SectionHead sectionName="prizes" />
 
-
-            <div className='flex flex-wrap items-center justify-evenly gap-4 bg-primary_light rounded-xl py-8 mt-4'>
+            <div className='grid grid-cols-3  items-center justify-evenly gap-8 bg-primary_light rounded-xl py-8 m-auto mt-4 px-10 md:flex md:flex-wrap sm:px-0 '>
                 {
                     prizesData.map((prize)=>{
                         return(

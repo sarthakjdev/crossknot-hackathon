@@ -8,7 +8,7 @@
 import SectionHead from '../sectionHeads'
 import SpeakerCard from './speakerCard'
 
-import speakersData from '../../../public/data/speakers'
+import speakersData from '../../data/speakers'
 export default function Speakers(){
     return (
         <section className="mx-20">
