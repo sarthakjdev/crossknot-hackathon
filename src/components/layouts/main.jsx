@@ -8,7 +8,7 @@
 import Header from "../header/header"
 import Footer from "../footer/footer"
 
-export default function mainLayout({children}){
+export default function MainLayout({children}){
     return (
         <>
         <Header/>

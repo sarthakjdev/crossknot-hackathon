@@ -1,6 +1,6 @@
 import SpeakerSection from "../src/components/speakers/speakers"
 
-export default function About(){
+export default function Speakers(){
     return(
             <SpeakerSection/>
     )

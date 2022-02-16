@@ -6,7 +6,7 @@
 
 import Image from "next/image"
 
-export default function prizeCard({ rank, rankIcon, rankIncentives}){
+export default function PrizeCard({ rank, rankIcon, rankIncentives}){
 
     if(rank === 'first') {
         return (

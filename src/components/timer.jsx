@@ -6,7 +6,7 @@
  */
 
 
-export default function timer(){
+export default function Timer(){
     return (
         <section>
             timer will be added here

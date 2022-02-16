@@ -4,7 +4,7 @@ import aboutImage from '../../../public/images/about.svg'
 
 
 import tracksData from '../../../public/data/trackData'
-export default function tracks(){
+export default function About(){
     return (
         <section className='flex flex-col my-8 mx-14'>
             <SectionHead sectionName="about us"/>

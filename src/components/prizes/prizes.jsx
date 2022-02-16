@@ -11,7 +11,7 @@ import PrizeCard from './prizeCard'
 import prizesData from '../../../public/data/prizeData'     // prizes data imported from the static file in the same project
 
 
-export default function prize(){
+export default function Prize(){
     return (
         <section className=' mx-14 my-8'>
             <SectionHead sectionName="prizes" />

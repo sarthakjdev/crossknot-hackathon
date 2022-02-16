@@ -1,7 +1,7 @@
-import About from '../src/components/about/about'
+import AboutSection from '../src/components/about/about'
 
-export default function about(){
+export default function About(){
     return(
-        <About />
+        <AboutSection />
     )
 }

@@ -12,7 +12,7 @@ import twitterIcon from "../../../public/images/socials/twitter.svg"
 import linkedinIcon from "../../../public/images/socials/linkedin.svg"
 import githubIcon from "../../../public/images/socials/github.svg"
 
-export default function speakerCard({speaker}){
+export default function SpeakerCard({speaker}){
     return (
             <div className="flex flex-col relative items-center justify-center">
                 <div className="relative group">

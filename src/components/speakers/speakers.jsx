@@ -9,7 +9,7 @@ import SectionHead from '../sectionHeads'
 import SpeakerCard from './speakerCard'
 
 import speakersData from '../../../public/data/speakers'
-export default function speakers(){
+export default function Speakers(){
     return (
         <section className="mx-20">
             <section className='flex flex-col my-10'>

@@ -64,7 +64,7 @@ function toggleNavbar() {
 
 }
 
-export default function header(){
+export default function Header(){
 
 return (
        <header className="flex items-center justify-between px-8 py-5 lg:relative">

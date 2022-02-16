@@ -7,7 +7,7 @@
 
 import Image from "next/image"
 
-export default function sponsotCard({ trackIcon, trackName, trackDesc }){
+export default function SponsotCard({ trackIcon, trackName, trackDesc }){
     return (
         <div className="flex bg-none border-card_dark border-8 rounded-md">
             <div className="flex flex-col items-center justify-center p-2 bg-card_light rounded-md m-2">

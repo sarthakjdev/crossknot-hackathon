@@ -9,7 +9,7 @@ import SectionHead from '../sectionHeads'
 import SponsorCard from './speakerCard'
 
 import tracksData from '../../../public/data/trackData'
-export default function sponsors(){
+export default function Sponsors(){
     return (
         <section className='flex flex-col '>
             <SectionHead sectionName="tracks"/>

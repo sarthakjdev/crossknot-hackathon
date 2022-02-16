@@ -6,8 +6,7 @@ import calendarIcon from "../../../public/images/calendar.svg";
 import locationIcon from "../../../public/images/location.svg";
 import landingPageImage from "../../../public/images/landingImage.svg";
 
-export default function heroSection() {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+export default function HeroSection() {
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://apply.devfolio.co/v2/sdk.js";
