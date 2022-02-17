@@ -1,20 +1,20 @@
-import vinitshahdeo from '../../public/images/teams/automation.svg'
-import parthlimbad from '../../public/images/teams/blockchain.svg'
-import amankumar from '../../public/images/teams/cyber_bullying.svg'
-import sarthakjain from '../../public/images/teams/mental_health.svg'
-import anubhav from '../../public/images/teams/no_code.svg'
-import pranjalbareth from '../../public/images/teams/open_innovation.svg'
-import tejaswichaudhary from '../../public/images/teams/remote_world.svg'
-import akshatbansal from '../../public/images/teams/remote_world.svg'
-import devrajchartribin from '../../public/images/teams/remote_world.svg'
-import namanjolly from '../../public/images/teams/remote_world.svg'
-import vanshikatandon  from '../../public/images/teams/remote_world.svg'
-import anushkavarshney from '../../public/images/teams/remote_world.svg'
-import nareshsain from '../../public/images/teams/remote_world.svg'
+import vinitshahdeo from '../../public/images/teams/vinit_shahdeo.png'
+import parthlimbad from '../../public/images/teams/parth.png'
+import amankumar from '../../public/images/teams/aman_kumar.png'
+import sarthakjain from '../../public/images/teams/sarthak.png'
+import anubhav from '../../public/images/teams/anubhav.png'
+import pranjalbareth from '../../public/images/teams/pranjal.png'
+import tejaswichaudhary from '../../public/images/teams/Tejaswi.png'
+import akshatbansal from '../../public/images/teams/akshat_bansal.png'
+import devrajchartribin from '../../public/images/teams/devraj.png'
+import namanjolly from '../../public/images/teams/naman_jolly.png'
+import vanshikatandon  from '../../public/images/teams/vanshika_tandon.png'
+import anushkavarshney from '../../public/images/teams/anushka_varshney.png'
+import nareshsain from '../../public/images/teams/naresh_sain.png'
 
 module.exports = [
     {
-        memberId: 1, 
+        memberId: 1,
         memberIcon: vinitshahdeo, 
         memberName: 'Vinit Shahdeo',
         memberDesignation: 'founder',
@@ -135,7 +135,7 @@ module.exports = [
     },
     {
         memberId: 13, 
-        memberIcon: open_innovation, 
+        memberIcon: namanjolly, 
         memberName: 'Naman Jolly', 
         memberDesignation: 'content manager',
         memberDescription: 'lorem ipsum',

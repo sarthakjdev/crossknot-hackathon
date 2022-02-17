@@ -16,9 +16,8 @@ export default function SpeakerCard({speaker}){
     return (
             <div className="flex flex-col relative items-center justify-center">
                 <div className="relative group">
-
                     {/* Speaker image */}
-                    <Image src={speaker.image} alt={speaker.name} className="border-primary_dark border-4 rounded-full z-10 absolute top-0 bottom-0 left-0 right-0 group-hover:blur-sm transition-all duration-50" />
+                    <Image src={speaker.image} alt={speaker.name} className="border-primary_dark border-4 rounded-full z-10 group-hover:blur-sm transition-all duration-50" />
 
                     {/* Speakers social handles to be dispalyed on hover */}
                     <div className="absolute top-0 bottom-0 left-0 right-0 hidden z-20 gap-2 place-content-center items-center group-hover:flex transition-all duration-200">
