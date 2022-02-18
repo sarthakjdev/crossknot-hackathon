@@ -40,7 +40,7 @@ module.exports = [
         memberDesignation: 'Founder',
         memberDescription: 'lorem ipsum',
         memberTwitter: 'https://www.twitter.com/thisisaman01',
-        memberGithub: 'https://github.com/vinitshahdeo',
+        memberGithub: 'https://github.com/thisisamank',
         memberLinkedin: 'https://www.linkedin.com/in/thisisamank'
     },
     {
@@ -89,8 +89,8 @@ module.exports = [
         memberName: 'Tejaswi Chaudhary', 
         memberDesignation: 'Designer',
         memberDescription: 'lorem ipsum',
-        memberTwitter: 'empty',
-        memberGithub: 'https://github.com/vinitshahdeo',
+        memberTwitter: '/team',
+        memberGithub: 'https://github.com/Tejaswi-Chaudhari',
         memberLinkedin: 'https://www.linkedin.com/in/tejaswi-chaudhari/'
     },
     {
@@ -100,7 +100,7 @@ module.exports = [
         memberDesignation: 'Designer',
         memberDescription: 'lorem ipsum',
         memberTwitter: 'https://twitter.com/devrajchatribin',
-        memberGithub: 'https://github.com/vinitshahdeo',
+        memberGithub: 'https://github.com/DevrajDC',
         memberLinkedin: 'https://www.linkedin.com/in/devraj-chatribin/'
     },
     {
@@ -120,7 +120,7 @@ module.exports = [
         memberDesignation: 'Social Media Manager',
         memberDescription: 'lorem ipsum',
         memberTwitter: 'https://www.twitter.com/anushka_twt',
-        memberGithub: 'https://github.com/vinitshahdeo',
+        memberGithub: '/team',
         memberLinkedin: 'https://www.linkedin.com/in/anushkavarshney/'
     },
     {
@@ -140,7 +140,7 @@ module.exports = [
         memberDesignation: 'Content Manager',
         memberDescription: 'lorem ipsum',
         memberTwitter: 'https://twitter.com/the_jolly_naman',
-        memberGithub: 'https://github.com/vinitshahdeo',
+        memberGithub: '/team',
         memberLinkedin: 'https://www.linkedin.com/in/thejollynaman/'
     },
 ]
