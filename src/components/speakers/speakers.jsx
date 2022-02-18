@@ -27,7 +27,7 @@ export default function Speakers(){
 
         <section className="flex flex-col my-24">
         <SectionHead sectionName="Judges"/>
-            <div className='flex flex-wrap items-center justify-center m-auto gap-8 mt-4'> 
+            <div className='flex flex-wrap items-center justify-center m-auto gap-12 gap-y-20 mt-4'> 
             {
                 speakersData.map((speaker)=>{
                     if(speaker.judge) {
