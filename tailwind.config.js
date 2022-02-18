@@ -49,10 +49,14 @@ module.exports = {
         '40': '40%',
         quarter_past: '75%',
         half: '50%',
-        '70': '70%'
+        '70': '70%',
+        '16rem': '16rem'
       },
       zIndex: {
         '100': 100
+      },
+      maxHeight: {
+        '30': '7rem'
       },
       screens: {
         '2xl': {'max': '1535px'},

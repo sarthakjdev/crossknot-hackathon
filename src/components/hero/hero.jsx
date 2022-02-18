@@ -5,8 +5,10 @@ import { useEffect } from "react";
 import calendarIcon from "../../../public/images/calendar.svg";
 import locationIcon from "../../../public/images/location.svg";
 import landingPageImage from "../../../public/images/hero/landingImage.svg";
-
+import Timer from '../timer'
 import headingImage from "../../../public/images/hero/heading.svg"
+
+
 
 export default function HeroSection() {
   useEffect(() => {
@@ -70,6 +72,8 @@ export default function HeroSection() {
             <div className="flex flex-col">
               <p className="text-center m-auto tracking-wide text-primary text-xl ">hackathon kicks off in</p>
               {/* timer here  */}
+
+              <Timer />
             </div>
       </div>
     </section>

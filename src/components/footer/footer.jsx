@@ -20,29 +20,29 @@ const footerMenu = [
         url: '/about'
     },
     {
-        name: 'Press Kit', 
+        name: 'Press Kit',
         url: '/about'
     },
     {
         name: 'Code of Conduct', 
-        url: '/about'
+        url: 'https://github.com/crossknot-community/crossknot/blob/main/CODE_OF_CONDUCT.md'
     },
 ]
 
 const socials = [
     {
         name: 'discord', 
-        url: '',
+        url: 'https://discord.gg/ScREataGaY',
         icon: discordIcon
     },
     {
         name: 'twitter', 
-        url: '',
+        url: 'https://twitter.com/crossknotcomm',
         icon: twitterIcon
     },
     {
         name: 'instagram', 
-        url: '',
+        url: 'https://www.instagram.com/crossknothacks/',
         icon: instaIcon
     },
     {
@@ -57,7 +57,7 @@ const socials = [
     },
     {
         name: 'linkedin', 
-        url: '',
+        url: 'https://www.linkedin.com/company/crossknot-hacks/about/',
         icon: linkedinIcon
     },
 ]

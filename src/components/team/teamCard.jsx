@@ -27,8 +27,8 @@
                  </div>
  
                  {/* Team's member name and designation */}
-                 <div className="bg-white text-primary_dark pb-4 pt-10 px-6 flex flex-col items-center justify-center border-grey border-2 rounded-lg absolute top-40">
-                 <h4 className="text-center font-primary font-extrabold uppercase text-lg">{member.memberName}</h4>
+                 <div className="bg-white w-12rem text-primary_dark pb-4 pt-10 px-6 flex flex-col items-center justify-center border-grey border-2 rounded-lg absolute top-40 w-16rem">
+                 <h4 className="text-center font-primary font-extrabold text-lg">{member.memberName}</h4>
                  <h5 className="text-center font-primary font-extralight">{member.memberDesignation}</h5>
                  </div>
              </div>
