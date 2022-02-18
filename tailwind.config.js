@@ -40,6 +40,15 @@ module.exports = {
           }
         }
       },
+      keyframes: {
+        whirl: {
+         '0%, 100%': { transform: 'translateY(-8%)' },
+         '50%': { transform: 'translateY(0)'}
+        }
+      },
+      animation: {
+        'whirl': 'whirl 4s ease-in-out infinite' 
+      },
       fontFamily: {
         primary: ['Segoe UI', 'sans-serif'],
         secondary: ['Product Sans', 'sans-serif']
@@ -47,10 +56,10 @@ module.exports = {
       width: {
         '30': '30%',
         '40': '40%',
-        quarter_past: '75%',
-        half: '50%',
         '70': '70%',
-        '16rem': '16rem'
+        '16rem': '16rem',
+        half: '50%',
+        quarter_past: '75%'
       },
       zIndex: {
         '100': 100

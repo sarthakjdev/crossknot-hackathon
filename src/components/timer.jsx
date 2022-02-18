@@ -67,28 +67,28 @@ class CountDown extends Component {
   render() {
     const { days, seconds, hours, minutes } = this.state;
     return (
-      <div id="countdown" className="flex gap-6 text-white font-primary my-10">
+      <div id="countdown" className="flex gap-6 text-primary_dark font-primary my-10">
         <div className="col-4">
-          <div className="flex flex-col items-center justify-center bg-primary rounded-md py-4 px-4 w-20 sm:w-14">
-            <p id="day" className="text-center text-3xl">{days}</p>
+          <div className="flex flex-col items-center justify-center bg-primary rounded-md py-6 px-4 w-20 sm:w-14">
+            <p id="day" className="text-center text-5xl">{days}</p>
             <span className="text-center cm:text-sm">Days</span>
           </div>
         </div>
         <div className="col-4">
-        <div className="flex flex-col items-center justify-center bg-primary rounded-md py-4 px-4 w-20 sm:w-14">
-            <p id="hour" className="text-center text-3xl">{hours}</p>
+        <div className="flex flex-col items-center justify-center bg-primary rounded-md py-6 px-4 w-20 sm:w-14">
+            <p id="hour" className="text-center text-5xl">{hours}</p>
             <span className="text-center cm:text-sm">Hours</span>
           </div>
         </div>
         <div className="col-4">
-        <div className="flex flex-col items-center justify-center bg-primary rounded-md py-4 px-4 w-20 sm:w-14">
-            <p id="minute" className="text-center text-3xl">{minutes}</p>
+        <div className="flex flex-col items-center justify-center bg-primary rounded-md py-6 px-4 w-20 sm:w-14">
+            <p id="minute" className="text-center text-5xl">{minutes}</p>
             <span className="text-center cm:text-sm">Minutes</span>
           </div>
         </div>
         <div className="col-4">
-        <div className="flex flex-col items-center justify-center bg-primary rounded-md py-4 px-4 w-20 sm:w-14">
-            <p id="second" className="text-center text-3xl">{seconds}</p>
+        <div className="flex flex-col items-center justify-center bg-primary rounded-md py-6 px-4 w-20 sm:w-14">
+            <p id="second" className="text-center text-5xl">{seconds}</p>
             <span className="text-center cm:text-sm">Seconds</span>
           </div>
         </div>

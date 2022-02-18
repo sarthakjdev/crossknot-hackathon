@@ -17,11 +17,11 @@ const footerMenu = [
     },
     {
         name: 'Crossknot Blog', 
-        url: '/about'
+        url: 'https://blog.crossknotcommunity.tech/'
     },
     {
         name: 'Press Kit',
-        url: '/about'
+        url: '/'
     },
     {
         name: 'Code of Conduct', 
@@ -66,7 +66,7 @@ export default function Footer(){
     return (
         <footer className="flex items-center justify-center bg-primary_light rounded-xl m-8 text-primary_dark px-14 py-6 md:flex-col">
                 <div>
-                    <Image src={footerImage} alt="footer illustration" />
+                    <Image src={footerImage} alt="footer illustration" className="animate-whirl transition-all duration-200" />
                 </div>
                 <div className="flex flex-col">
                 <div className="flex lg:flex-col">
@@ -74,17 +74,17 @@ export default function Footer(){
                         {
                             footerMenu.map((item)=>{
                                 return (
-                                    <Link href={item.url} key={item.name}><a className="text-center py-1 text-xl">{item.name}</a></Link>                                )
+                                    <Link href={item.url} key={item.name}><a className="text-left py-1 text-xl font-extralight md:text-center">{item.name}</a></Link>                                )
                             })
                         }
                     </div>
                     <div className="flex flex-col items-center justify-center">
                         <h3  className="text-center font-bold font-primary text-2xl mb-4">Find us Online</h3>
-                        <div className="flex flex-wrap gap-6 w-half sm:w-quarter_past">
+                        <div className="flex flex-wrap gap-6 w-half items-center justify-center sm:w-quarter_past">
                             {
                                 socials.map((social)=>{
                                     return (
-                                        <Link href={social.url} key={social.name}><a><Image src={social.icon} alt={social.name}/></a></Link>
+                                        <Link href={social.url} key={social.name} ><a className="hover:scale-110 transition-all duration-1000 ease-linear"><Image src={social.icon} alt={social.name}/></a></Link>
                                     )
                                 })
                             }
