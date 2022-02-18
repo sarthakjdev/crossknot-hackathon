@@ -1,7 +1,7 @@
-import TrackSection from "../src/components/tracks/tracks"
+import SponsorsSection from "../src/components/sponsors/sponsors"
 
 export default function Sponsors(){
     return(
-            <TrackSection/>
+            <SponsorsSection />
     )
 }

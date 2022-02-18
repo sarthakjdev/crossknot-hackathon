@@ -6,22 +6,25 @@
 
 
 import SectionHead from '../sectionHeads'
-import SponsorCard from './speakerCard'
+import SponsorsCard from './sponsorsCard'
 
-import tracksData from '../../../public/data/trackData'
+const sponsorsType = ['title', 'platinum', 'gold']
+
 export default function Sponsors(){
     return (
-        <section className='flex flex-col '>
-            <SectionHead sectionName="tracks"/>
-            <div className='flex flex-wrap items-center justify-center m-auto gap-6'> 
-            {
-                tracksData.map((sponsor)=>{
-                    return (
-                        <SponsorCard key={sponsor.id} sponsor={sponsor} />
-                    )}
-                    )
-            }
-            </div>
+        <section className='flex flex-col mx-14 sm:mx-6'>
+            <SectionHead sectionName="Sponsors"/>
+             {
+                 
+                 sponsorsType.map((type)=>{
+                     return (
+                        <>
+                        <SponsorsCard type={type} key={type} />
+                        <hr />
+                        </>
+                     )
+                 })
+             }
         </section>
     )
 }

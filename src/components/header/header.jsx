@@ -54,6 +54,7 @@ function toggleNavbar() {
         li.addEventListener('click', ()=>{
             if(navul.style.transform === 'translateX(0%)') {
                 navul.style.transform = 'translateX(-100%)'
+                body.style.overflowY = 'scroll'
             }else {
                 navul.style.transform = 'translateX(0%)'
             }
