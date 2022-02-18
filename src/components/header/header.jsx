@@ -9,11 +9,6 @@ import Image from "next/image"
 import logo from '../../../public/images/logo.svg'
 
 const pages = [
-
-    { 
-        name: 'Home', 
-        link: '/'
-    },
     { 
         name: 'About', 
         link: '/about'
@@ -43,10 +38,14 @@ const pages = [
 
 function toggleNavbar() {
     const navul = document.querySelector('.navbar')
+    const body = document.querySelector('body')
     if(navul.style.transform === 'translateX(0%)') {
         navul.style.transform = 'translateX(-100%)'
+        body.style.overflowY = 'scroll'
     }else {
         navul.style.transform = 'translateX(0%)'
+        body.style.overflowY = 'hidden'
+        window.moveTo(0,0)
     }
     
     const nav_lis = Array.from(navul.children)
@@ -61,6 +60,8 @@ function toggleNavbar() {
         })
     })
 
+    
+
 
 }
 
@@ -74,7 +75,7 @@ return (
 
         {/* Navbar menu */}
        <nav className="flex items-center justify-evenly ">
-       <div className=" navbar flex items-center justify-evenly transition-all duration-200 lg:-translate-x-full lg:flex-col lg:w-full lg:absolute lg:top-20 lg:left-0 lg:right-0 lg:bg-mainbg lg:mt-5 lg:z-100">
+       <div className=" navbar flex items-center justify-evenly transition-all duration-200 lg:-translate-x-full lg:flex-col lg:w-full lg:absolute lg:top-20 lg:left-0 lg:right-0 lg:bg-mainbg lg:mt-8 lg:z-100">
            {
                pages.map((page)=>{
                 return (
