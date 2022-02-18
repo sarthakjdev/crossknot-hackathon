@@ -87,7 +87,7 @@ module.exports = [
         memberId: 8, 
         memberIcon: tejaswichaudhary, 
         memberName: 'Tejaswi Chaudhary', 
-        memberDesignation: 'designer',
+        memberDesignation: 'Designer',
         memberDescription: 'lorem ipsum',
         memberTwitter: 'empty',
         memberGithub: 'https://github.com/vinitshahdeo',

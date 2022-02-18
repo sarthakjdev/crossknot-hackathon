@@ -16,7 +16,7 @@ const footerMenu = [
         url: '/about'
     },
     {
-        name: 'Crossknot Blog', 
+        name: 'CrossKnot Blog', 
         url: 'https://blog.crossknotcommunity.tech/'
     },
     {

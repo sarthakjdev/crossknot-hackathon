@@ -18,7 +18,7 @@ export default function SponsorCard({ type }){
                     sponsorsData.map((sponsor)=>{
                         if(sponsor.type === type){
                             return (
-                                <Image src={sponsor.icon} alt={sponsor.id} width={200}/>
+                                <Image src={sponsor.icon} alt={sponsor.id} width={200} key={sponsor.id}/>
                             )
                         }
                     })
