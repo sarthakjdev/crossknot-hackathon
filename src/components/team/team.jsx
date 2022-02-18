@@ -17,7 +17,7 @@
      return (
          <section className="mx-20 mb-40">
              <section className='flex flex-col my-10'>
-             <SectionHead sectionName="Fouders"/>
+             <SectionHead sectionName="Founders"/>
              <div className='flex flex-wrap items-center justify-center m-auto gap-20 gap-y-20 mt-4'> 
              {
                  teamsData.map((teamMember)=>{
