@@ -30,7 +30,7 @@ module.exports = [
         memberDesignation: 'Founder',
         memberDescription: 'lorem ipsum',
         memberTwitter: 'https://twitter.com/IAmParthL',
-        memberGithub: 'not found',
+        memberGithub: '/team',
         memberLinkedin: 'https://www.linkedin.com/in/iamparthlimbad'
     },
     {
@@ -131,7 +131,7 @@ module.exports = [
         memberDescription: 'lorem ipsum',
         memberTwitter: 'https://twitter.com/VanTan2430',
         memberGithub: 'https://github.com/VanshikaTandon/',
-        memberLinkedin: 'www.linkedin.com/in/vanshika-tandon-3024'
+        memberLinkedin: 'https://www.linkedin.com/in/vanshika-tandon-3024'
     },
     {
         memberId: 13, 
