@@ -8,8 +8,6 @@ import landingPageImage from "../../../public/images/hero/landingImage.svg";
 import Timer from '../timer'
 import headingImage from "../../../public/images/hero/heading.svg"
 
-
-
 export default function HeroSection() {
   useEffect(() => {
     const script = document.createElement("script");
@@ -59,9 +57,7 @@ export default function HeroSection() {
             data-hackathon-slug="CROSSKNOT HACKS"
             data-button-theme="light"
           ></div>
-          <button className="h-12 px-4 py-2 text-white bg-primary rounded-md">
-            Join Discord
-          </button>
+          <Link href="https://discord.gg/ScREataGaY"><a><button className="h-12 px-4 py-2 text-white bg-primary rounded-md">Join Discord</button></a></Link>
         </div>
       </div>
 
@@ -70,9 +66,8 @@ export default function HeroSection() {
             <div className="lg:hidden w-quarter_past"><Image src={landingPageImage} alt="landing page illustration" /></div>
             {/* Timer for the hackathon to be kicked off */}
             <div className="flex flex-col">
-              <p className="text-center m-auto tracking-wide text-primary text-xl ">hackathon kicks off in</p>
+              <p className="text-center m-auto tracking-wide text-primary text-2xl mb-4 mt-8">hackathon kicks off in</p>
               {/* timer here  */}
-
               <Timer />
             </div>
       </div>
