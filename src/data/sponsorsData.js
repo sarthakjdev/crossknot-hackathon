@@ -17,24 +17,24 @@ module.exports = [
         icon: devfolio,
         type: 'title',
     },
-    {
-        id: 2,
-        name: 'Postman', 
-        icon: postman,
-        type: 'title',
-    },
+    // {
+    //     id: 2,
+    //     name: 'Postman', 
+    //     icon: postman,
+    //     type: 'title',
+    // },
     {
         id: 3,
         name: 'Polygon', 
         icon: polygon,
         type: 'title',
     },
-    {
-        id: 4,
-        name: 'Github', 
-        icon: github,
-        type: 'platinum',
-    },
+    // {
+    //     id: 4,
+    //     name: 'Github', 
+    //     icon: github,
+    //     type: 'platinum',
+    // },
     {
         id: 5,
         name: 'Tezos', 
