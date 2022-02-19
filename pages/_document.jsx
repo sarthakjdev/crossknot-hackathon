@@ -18,7 +18,7 @@ export default class CustomDocument extends Document {
 
                 {/* open-graph / facebook  */}
                 <meta property="og:title" content="CrossKnot Hacks" />
-                <meta property="og:description" content="CrossKnot is a 48 hours an interactive coding event to bring developers and other interested people together to improve upon or build a new software program." />
+                <meta property="og:description" content="CrossKnot is a 36 hours an interactive coding event to bring developers and other interested people together to improve upon or build a new software program." />
                 <meta property="og:type" content="hackathon site" />
                 <meta property="og:url" content="https://crossknothacks.co" />
                 <meta property="og:site_name" content="CROSSKNOT HACKS" />
