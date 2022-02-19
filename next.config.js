@@ -4,7 +4,7 @@ module.exports = {
     return [
       {
         source: '/:path*',
-        destination: 'https://api.devfolio.co/api/hackathons/:path*',
+        destination: 'https://api.devfolio.co/:path*',
       },
     ]
   },
