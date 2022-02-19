@@ -70,7 +70,7 @@ export default function Footer(){
                 </div>
                 <div className="flex flex-col">
                 <div className="flex lg:flex-col">
-                    <div className="flex flex-col my-6">
+                    <div className="flex flex-col my-6">1016
                         {
                             footerMenu.map((item)=>{
                                 return (

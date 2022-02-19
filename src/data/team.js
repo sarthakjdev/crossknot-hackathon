@@ -117,7 +117,7 @@ module.exports = [
         memberId: 11, 
         memberIcon: anushkavarshney, 
         memberName: 'Anushka Varshney', 
-        memberDesignation: 'Social Media Manager',
+        memberDesignation: 'Marketing Lead',
         memberDescription: 'lorem ipsum',
         memberTwitter: 'https://www.twitter.com/anushka_twt',
         memberGithub: '/team',
