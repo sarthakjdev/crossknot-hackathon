@@ -79,7 +79,7 @@ return (
            {
                pages.map((page)=>{
                 return (
-                    <Link href={page.link} key={page.name}><a className="text-primary_dark text-xl font-primary py-2 px-6 hover:rounded-full hover:text-white hover:bg-primary transition-all duration-100 mx-2 lg:my-8 uppercase active:bg-primary active:text-white active:rounded-full">{page.name}</a></Link>
+                    <Link href={page.link} key={page.name}><a className="text-primary_dark text-xl font-primary py-2 px-6 hover:rounded-full hover:text-white hover:bg-primary transition-all duration-200 mx-2 lg:my-8 uppercase active:bg-primary active:text-white active:rounded-full">{page.name}</a></Link>
                 )
                })
            }

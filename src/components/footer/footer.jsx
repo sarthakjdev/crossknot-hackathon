@@ -64,7 +64,7 @@ const socials = [
 
 export default function Footer(){
     return (
-        <footer className="flex items-center justify-center bg-primary_light rounded-xl m-8 text-primary_dark px-14 py-6 md:flex-col">
+        <footer className="flex items-center justify-center bg-primary_light rounded-xl m-8 text-primary_dark px-14 py-6 md:flex-col md:px-8">
                 <div>
                     <Image src={footerImage} alt="footer illustration" className="animate-whirl transition-all duration-200" />
                 </div>
@@ -74,13 +74,13 @@ export default function Footer(){
                         {
                             footerMenu.map((item)=>{
                                 return (
-                                    <Link href={item.url} key={item.name}><a className="text-left py-1 text-xl font-extralight md:text-center">{item.name}</a></Link>                                )
+                                    <Link href={item.url} key={item.name}><a className="text-left py-1 text-xl font-extralight midLg:text-center">{item.name}</a></Link>                                )
                             })
                         }
                     </div>
                     <div className="flex flex-col items-center justify-center">
                         <h3  className="text-center font-bold font-primary text-2xl mb-4">Find us Online</h3>
-                        <div className="flex flex-wrap gap-6 w-half items-center justify-center sm:w-quarter_past">
+                        <div className="flex flex-wrap gap-6 w-half items-center justify-center midLg:w-quarter_past sm:w-full">
                             {
                                 socials.map((social)=>{
                                     return (
