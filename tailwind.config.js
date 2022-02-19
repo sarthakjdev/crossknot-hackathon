@@ -61,6 +61,9 @@ module.exports = {
         half: '50%',
         quarter_past: '75%'
       },
+      height: {
+        '90vh': '90vh'
+      },
       zIndex: {
         '100': 100
       },

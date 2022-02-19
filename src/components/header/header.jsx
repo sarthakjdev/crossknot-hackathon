@@ -52,18 +52,17 @@ function toggleNavbar() {
 
     nav_lis.map((li)=> {
         li.addEventListener('click', ()=>{
+            console.log('event trigerred')
+
             if(navul.style.transform === 'translateX(0%)') {
                 navul.style.transform = 'translateX(-100%)'
                 body.style.overflowY = 'scroll'
             }else {
                 navul.style.transform = 'translateX(0%)'
+                body.style.overflowY = 'hidden'
             }
         })
     })
-
-    
-
-
 }
 
 export default function Header(){
@@ -76,7 +75,7 @@ return (
 
         {/* Navbar menu */}
        <nav className="flex items-center justify-evenly ">
-       <div className=" navbar flex items-center justify-evenly transition-all duration-200 lg:-translate-x-full lg:flex-col lg:w-full lg:absolute lg:top-20 lg:left-0 lg:right-0 lg:bg-mainbg lg:mt-8 lg:z-100">
+       <div className=" navbar flex items-center justify-evenly transition-all duration-200 lg:-translate-x-full lg:flex-col lg:w-full lg:h-90vh lg:absolute lg:top-20 lg:left-0 lg:right-0 lg:bg-mainbg lg:mt-8 lg:z-100">
            {
                pages.map((page)=>{
                 return (
