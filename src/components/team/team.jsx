@@ -11,7 +11,7 @@
  import teamsData from '../../data/team'
 
 //  shuffling the team members
- teamsData.sort(() => Math.random() - 0.5)
+//  teamsData.sort(() => Math.random() - 0.5)
 
  export default function Teams(){
      return (
