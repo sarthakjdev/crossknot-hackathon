@@ -5,19 +5,7 @@
  * 
  */
 
-
-// export default function Timer(){
-//     return (
-//         <section>
-//             timer will be added here
-//         </section>
-//     )
-// }
-
-
 import React, { Component } from "react";
-// import moment from 'moment';
-
 class CountDown extends Component {
   constructor(props) {
     super(props);
@@ -59,7 +47,7 @@ class CountDown extends Component {
     }
   }
   componentDidMount() {
-    this.deadline = new Date("Feb 26, 2022 10:00:00").getTime();
+    this.deadline = new Date("Feb 27, 2022 10:00:00").getTime();
 
     this.x = setInterval(this.count, 1000);
   }
