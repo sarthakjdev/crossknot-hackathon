@@ -9,6 +9,8 @@ import Timer from '../timer'
 import headingImage from "../../../public/images/hero/heading.svg"
 
 export default function HeroSection() {
+
+  // fetching data for devfolio apply button 
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://apply.devfolio.co/v2/sdk.js";
