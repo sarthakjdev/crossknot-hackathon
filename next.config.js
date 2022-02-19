@@ -1,15 +1,10 @@
 module.exports = {
   reactStrictMode: true,
-  async headers() {
+  async rewrites() {
     return [
       {
-        source: '/',
-        headers: [
-          {
-            key: 'Access-Control-Allow-Origin',
-            value: '*',
-          },
-        ],
+        source: '/:path*',
+        destination: 'https://api.devfolio.co/api/hackathons/:path*',
       },
     ]
   },
