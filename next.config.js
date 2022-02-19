@@ -3,7 +3,7 @@ module.exports = {
   async rewrites() {
     return [
       {
-        source: '/:path*',
+        source: '/',
         destination: 'https://api.devfolio.co/:path*',
       },
     ]
