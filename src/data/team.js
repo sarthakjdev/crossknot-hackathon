@@ -11,7 +11,7 @@ import namanjolly from '../../public/images/teams/naman_jolly.png'
 import vanshikatandon  from '../../public/images/teams/vanshika_tandon.png'
 import anushkavarshney from '../../public/images/teams/anushka_varshney.png'
 import nareshsain from '../../public/images/teams/naresh_sain.png'
-
+import chaynikaarora from '../../public/images/teams/chaynika_arora.png'
 module.exports = [
     {
         memberId: 1,
@@ -142,5 +142,15 @@ module.exports = [
         memberTwitter: 'https://twitter.com/the_jolly_naman',
         memberGithub: '/team',
         memberLinkedin: 'https://www.linkedin.com/in/thejollynaman/'
+    },
+    {
+        memberId: 14, 
+        memberIcon: chaynikaarora, 
+        memberName: 'Chaynika Arora', 
+        memberDesignation: 'Marketing',
+        memberDescription: 'lorem ipsum',
+        memberTwitter: '/team',
+        memberGithub: '/team',
+        memberLinkedin: 'https://www.linkedin.com/in/chaynika-arora/'
     },
 ]
