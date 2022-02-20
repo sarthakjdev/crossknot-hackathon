@@ -1,7 +1,15 @@
+import Head from 'next/head'
+
 import AboutSection from '../src/components/about/about'
+
 
 export default function About(){
     return(
-        <AboutSection />
+            <>
+                <Head>
+                <title>About | CrossKnot Hacks</title>
+                </Head>
+                <AboutSection />
+            </>
     )
 }
