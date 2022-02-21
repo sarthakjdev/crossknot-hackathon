@@ -5,9 +5,10 @@
  */
 
 
+import Link from "next/link"
 import Image from "next/image"
 
-import sponsorsData from '../../data/sponsorsData'
+import sponsorsData from '../../data/sponsors&partners'
 
 export default function SponsorCard({ type }){
     return (
@@ -18,7 +19,7 @@ export default function SponsorCard({ type }){
                     sponsorsData.map((sponsor)=>{
                         if(sponsor.type === type){
                             return (
-                                <Image src={sponsor.icon} alt={sponsor.id} width={200} key={sponsor.id}/>
+                                <Link href={sponsor.url} key={sponsor.id}><a><Image src={sponsor.icon} alt={sponsor.id} width={200} key={sponsor.id}/></a></Link>
                             )
                         }
                     })

@@ -8,7 +8,7 @@
 import SectionHead from '../sectionHeads'
 import SponsorsCard from './sponsorsCard'
 
-const sponsorsType = ['title', 'platinum', 'gold']
+const sponsorsType = ['title', 'platinum', 'gold', 'community partner']
 
 export default function Sponsors(){
     return (
