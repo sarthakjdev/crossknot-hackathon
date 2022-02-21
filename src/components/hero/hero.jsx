@@ -42,7 +42,7 @@ export default function HeroSection() {
             <i className="mr-2">
               <Image src={calendarIcon} alt="calendarIcon" />
             </i>{" "}
-            27 Feb - 28 Feb
+            TBD
           </h2>
           <h2 className="items-center flex">
             <i className="mr-2">
@@ -67,11 +67,10 @@ export default function HeroSection() {
       <div className="flex flex-col place-content-center items-center">
             <div className="lg:hidden w-quarter_past"><Image src={landingPageImage} alt="landing page illustration" /></div>
             {/* Timer for the hackathon to be kicked off */}
-            <div className="flex flex-col">
+            {/* <div className="flex flex-col">
               <p className="text-center m-auto tracking-wide text-primary text-2xl mb-4 mt-8">hackathon kicks off in</p>
-              {/* timer here  */}
               <Timer />
-            </div>
+            </div> */}
       </div>
     </section>
   );

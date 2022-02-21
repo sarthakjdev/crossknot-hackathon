@@ -17,10 +17,10 @@ const pages = [
         name: 'Tracks', 
         link: '/tracks'
     },
-    { 
-        name: 'Speakers', 
-        link: '/speakers'
-    },
+    // { 
+    //     name: 'Speakers', 
+    //     link: '/speakers'
+    // },
     { 
         name: 'Sponsors', 
         link: '/sponsors'
@@ -29,10 +29,10 @@ const pages = [
         name: 'Prizes', 
         link: '/prizes'
     },
-    { 
-        name: 'Team', 
-        link: '/team'
-    },    
+    // { 
+    //     name: 'Team', 
+    //     link: '/team'
+    // },    
 
 ]
 
