@@ -11,16 +11,16 @@ import headingImage from "../../../public/images/hero/heading.svg"
 export default function HeroSection() {
 
   // fetching data for devfolio apply button 
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://apply.devfolio.co/v2/sdk.js";
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+//   useEffect(() => {
+//     const script = document.createElement("script");
+//     script.src = "https://apply.devfolio.co/v2/sdk.js";
+//     script.async = true;
+//     script.defer = true;
+//     document.body.appendChild(script);
+//     return () => {
+//       document.body.removeChild(script);
+//     };
+//   }, []);
 
   return (
     <section className="flex items-center justify-evenly lg:flex-col">
@@ -54,11 +54,11 @@ export default function HeroSection() {
 
         {/* call-to-actions buttons */}
         <div className="flex md:flex-col items-center mt-8 gap-4 md:justify-center md:gap-4">
-          <div
-            className="apply-button"
-            data-hackathon-slug="crossknothacks"
-            data-button-theme="dark"
-          ></div>
+//           <div
+//             className="apply-button"
+//             data-hackathon-slug="crossknothacks"
+//             data-button-theme="dark"
+//           ></div>
           <Link href="https://discord.gg/ScREataGaY"><a><button className="h-12 px-4 py-2 text-white bg-primary rounded-md">Join Discord</button></a></Link>
         </div>
       </div>
