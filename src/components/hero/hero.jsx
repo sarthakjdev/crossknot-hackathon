@@ -59,7 +59,7 @@ export default function HeroSection() {
             data-hackathon-slug="crossknothacks"
             data-button-theme="dark"
           ></div>*/}
-          <Link href="https://discord.gg/ScREataGaY"><a><button className="h-12 px-4 py-2 text-white bg-primary rounded-md">Join Discord</button></a></Link>
+          <Link href="https://discord.gg/ScREataGaY"><a><button className="h-12 px-4 py-2 text-white bg-primary rounded-md">Join Our Discord</button></a></Link>
         </div>
       </div>
 
