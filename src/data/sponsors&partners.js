@@ -17,7 +17,7 @@ module.exports = [
         id: 1,
         name: 'Devfolio', 
         icon: devfolio,
-        type: 'title',
+        type: 'title sponsor',
         url: 'https://devfolio.co'
     },
     // {
@@ -30,7 +30,7 @@ module.exports = [
         id: 3,
         name: 'Polygon', 
         icon: polygon,
-        type: 'title',
+        type: 'title sponsor',
         url: 'https://polygon.technology/'
     },
     // {
@@ -43,42 +43,42 @@ module.exports = [
         id: 5,
         name: 'Tezos', 
         icon: tezos,
-        type: 'platinum',
+        type: 'platinum sponsor',
         url: 'https://tezos.com/'
     },
     {
         id: 6,
         name: 'Filecoin', 
         icon: filecoin,
-        type: 'platinum',
+        type: 'platinum sponsor',
         url: 'https://filecoin.io/'
     },
     {
         id: 7,
         name: 'Celo', 
         icon: celo,
-        type: 'platinum',
+        type: 'platinum sponsor',
         url: 'https://celo.org/'
     },
     {
         id: 8,
         name: 'Taskade', 
         icon: taskade,
-        type: 'platinum',
+        type: 'platinum sponsor',
         url: 'https://www.taskade.com/'
     },
     {
         id: 9,
         name: 'Portis', 
         icon: portis,
-        type: 'platinum',
+        type: 'platinum sponsor',
         url: 'https://www.portis.io/'
     },
     {
         id: 10,
         name: 'DigitalOcean', 
         icon: digitalocean,
-        type: 'gold',
+        type: 'gold sponsor',
         url: 'https://www.digitalocean.com/'
     },
     {

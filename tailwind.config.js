@@ -16,6 +16,7 @@ module.exports = {
         card_dark: '#F4C559', 
         card_text: '#656565',
         footer_clr: '#D2EEDC',
+        sponsor_clr: '#B6E6D4',
       },
       typography: {
         DEAFAULT: {
