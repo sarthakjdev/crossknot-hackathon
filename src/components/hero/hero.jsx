@@ -42,7 +42,7 @@ export default function HeroSection() {
             <i className="mr-2">
               <Image src={calendarIcon} alt="calendarIcon" />
             </i>{" "}
-            TBD
+            17th - 25th March 2020
           </h2>
           <h2 className="items-center flex">
             <i className="mr-2">

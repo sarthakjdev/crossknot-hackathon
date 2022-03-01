@@ -9,7 +9,9 @@ module.exports = [
         rank: 'first',
         prizeIcon: firstIcon, 
         prizeDesc:  [ 
+            "Rs. 5,000 INR 💰",
             "Exclusive CrossKnot Swags to all team members 👕",
+            "Official Swags by Github 🧸",
             "90% discount coupons on courses from Coding Blocks. 🎟",
             "$2,000 free credits on Digital Ocean Account. 🌊"
         ], 
@@ -19,7 +21,9 @@ module.exports = [
         rank: 'second',
         prizeIcon: secondIcon, 
         prizeDesc: [
+            "Rs. 3,000 INR 💰",
             "Exclusive CrossKnot Swags to all team members 👕",
+            "Official Swags by Github 🧸",
             "90% discount coupons on courses from Coding Blocks. 🎟",
             "$2,000 free credits on Digital Ocean Account. 🌊"
         ], 
@@ -29,7 +33,9 @@ module.exports = [
         rank: 'third', 
         prizeIcon: thirdIcon, 
         prizeDesc: [
+            "Rs. 1,500 INR 💰",
             "Exclusive CrossKnot Swags to all team members 👕",
+            "Official Swags by Github 🧸",
             "90% discount coupons on courses from Coding Blocks. 🎟",
             "$2,000 free credits on Digital Ocean Account. 🌊"
         ], 
