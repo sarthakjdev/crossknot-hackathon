@@ -8,6 +8,7 @@ import ytIcon from '../../../public/images/footer/yt.svg'
 import mailIcon from '../../../public/images/footer/mail.svg'
 import discordIcon from '../../../public/images/footer/discord.svg'
 import linkedinIcon from '../../../public/images/footer/linkedin.svg'
+import footertitle from '../../../public/images/footer/footertitle.svg'
 
 
 const footerMenu = [
@@ -20,7 +21,7 @@ const footerMenu = [
         url: 'https://blog.crossknotcommunity.tech/'
     },
     {
-        name: 'Brochure',
+        name: 'Press Kit',
         url: 'https://drive.google.com/file/d/1CZRMklQp32SfJH9d2RBub-TEqTFzrCLb/view?usp=sharing'
     },
     {
@@ -64,20 +65,21 @@ const socials = [
 
 export default function Footer(){
     return (
-        <footer className="flex items-center justify-center bg-primary_light rounded-xl m-8 text-primary_dark px-14 py-6 md:flex-col md:px-8">
-                <div>
-                    <Image src={footerImage} alt="footer illustration" className="animate-whirl transition-all duration-200" />
-                </div>
-                <div className="flex flex-col">
-                <div className="flex lg:flex-col">
-                    <div className="flex flex-col my-6">
+        <footer className="flex items-center justify-center bg-footer_clr rounded-xl m-8 text-primary_dark px-14 py-6 md:flex-col md:px-8">
+               <div className="flex flex-col mx-40">
                         {
                             footerMenu.map((item)=>{
                                 return (
-                                    <Link href={item.url} key={item.name}><a className="text-left py-1 text-xl font-extralight midLg:text-center">{item.name}</a></Link>                                )
+                                    <Link href={item.url} key={item.name}><a className="text-left py-2 text-xl font-extralight midLg:text-center">{item.name}</a></Link>                                )
                             })
                         }
                     </div>
+                <div>
+                    <Image src={footertitle} alt="footer illustration"/>
+                </div>
+                <div className="flex flex-col">
+                <div className="flex lg:flex-col">
+                    
                     <div className="flex flex-col items-center justify-center">
                         <h3  className="text-center font-bold font-primary text-2xl mb-4">Find us Online</h3>
                         <div className="flex flex-wrap gap-6 w-half items-center justify-center midLg:w-quarter_past sm:w-full">
@@ -92,7 +94,7 @@ export default function Footer(){
                     </div>
                 </div>
                 <hr className="my-4"/>
-                <h3 className="text-center text-primary_dark">Copyright Ⓒ 2022 CrossKnot Community. All rights reserved.</h3>
+                <h3 className="text-center mr-50 text-primary_dark">Copyright Ⓒ 2022 CrossKnot Community. All rights reserved.</h3>
                 </div>
         </footer>
     )

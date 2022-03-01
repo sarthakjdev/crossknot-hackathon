@@ -14,7 +14,8 @@ module.exports = {
         secondary: '#656565',
         card_light: '#F4C456', 
         card_dark: '#F4C559', 
-        card_text: '#656565'
+        card_text: '#656565',
+        footer_clr: '#D2EEDC',
       },
       typography: {
         DEAFAULT: {
