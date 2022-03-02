@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect } from "react";
 import calendarIcon from "../../../public/images/calendar.svg";
 import locationIcon from "../../../public/images/location.svg";
+import discordIcon from '../../../public/images/discord.svg'
 import landingPageImage from "../../../public/images/hero/landingImage.svg";
 import Timer from '../timer'
 import headingImage from "../../../public/images/hero/heading.svg"
@@ -11,16 +12,16 @@ import headingImage from "../../../public/images/hero/heading.svg"
 export default function HeroSection() {
 
   // fetching data for devfolio apply button 
-//   useEffect(() => {
-//     const script = document.createElement("script");
-//     script.src = "https://apply.devfolio.co/v2/sdk.js";
-//     script.async = true;
-//     script.defer = true;
-//     document.body.appendChild(script);
-//     return () => {
-//       document.body.removeChild(script);
-//     };
-//   }, []);
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <section className="flex items-center justify-evenly lg:flex-col">
@@ -41,8 +42,8 @@ export default function HeroSection() {
           <h2 className="items-center flex">
             <i className="mr-2">
               <Image src={calendarIcon} alt="calendarIcon" />
-            </i>{" "}
-            17th - 25th March 2020
+            </i>
+            16th - 17th April 2022
           </h2>
           <h2 className="items-center flex">
             <i className="mr-2">
@@ -54,12 +55,12 @@ export default function HeroSection() {
 
         {/* call-to-actions buttons */}
         <div className="flex md:flex-col items-center mt-8 gap-4 md:justify-center md:gap-4">
-          {/*<div
+          <div
             className="apply-button"
             data-hackathon-slug="crossknothacks"
             data-button-theme="dark"
-          ></div>*/}
-          <Link href="https://discord.gg/ScREataGaY"><a><button className="h-12 px-4 py-2 text-white bg-primary rounded-md">Join Our Discord</button></a></Link>
+          ></div>
+          <Link href="https://discord.gg/ScREataGaY"><a><button className="flex items-center justify-around h-12 px-6 py-2 text-white bg-primary rounded-md border-primary border-2 hover:text-primary hover:bg-white transition-all duration-150">Join Our Discord</button></a></Link>
         </div>
       </div>
 
@@ -67,10 +68,10 @@ export default function HeroSection() {
       <div className="flex flex-col place-content-center items-center">
             <div className="lg:hidden w-quarter_past"><Image src={landingPageImage} alt="landing page illustration" /></div>
             {/* Timer for the hackathon to be kicked off */}
-            {/* <div className="flex flex-col">
+            <div className="flex flex-col">
               <p className="text-center m-auto tracking-wide text-primary text-2xl mb-4 mt-8">hackathon kicks off in</p>
               <Timer />
-            </div> */}
+            </div>
       </div>
     </section>
   );

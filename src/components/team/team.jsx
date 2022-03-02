@@ -10,6 +10,8 @@
  
  import teamsData from '../../data/team'
 
+import founderHead from '../../../public/images/pageHeads/founders.svg'
+import teamHead from '../../../public/images/pageHeads/team.svg'
 //  shuffling the team members
 //  teamsData.sort(() => Math.random() - 0.5)
 
@@ -17,7 +19,7 @@
      return (
          <section className="mx-20 mb-40">
              <section className='flex flex-col my-10'>
-             <SectionHead sectionName="Founders"/>
+             <SectionHead image={founderHead}/>
              <div className='flex flex-wrap items-center justify-center m-auto gap-20 gap-y-20 mt-4'> 
              {
                  teamsData.map((teamMember)=>{
@@ -30,7 +32,7 @@
              </div>
             </section>
             <section className='flex flex-col my-24'>
-             <SectionHead sectionName="Core Team"/>
+             <SectionHead image={teamHead}/>
              <div className='flex flex-wrap items-center justify-center m-auto gap-20 gap-y-40 mt-4'> 
              {
                  teamsData.map((teamMember)=>{

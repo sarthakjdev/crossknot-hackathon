@@ -17,22 +17,22 @@ const pages = [
         name: 'Tracks', 
         link: '/tracks'
     },
-    // { 
-    //     name: 'Speakers', 
-    //     link: '/speakers'
-    // },
     { 
-        name: 'Sponsors', 
+        name: 'Speakers', 
+        link: '/speakers'
+    },
+    { 
+        name: 'Partners', 
         link: '/sponsors'
     },
     { 
         name: 'Prizes', 
         link: '/prizes'
     },
-    // { 
-    //     name: 'Team', 
-    //     link: '/team'
-    // },    
+    { 
+        name: 'Team', 
+        link: '/team'
+    },    
 
 ]
 
@@ -75,7 +75,7 @@ return (
 
         {/* Navbar menu */}
        <nav className="flex items-center justify-evenly ">
-       <div className=" navbar flex items-center justify-evenly transition-all duration-200 lg:-translate-x-full lg:flex-col lg:w-full lg:h-90vh lg:absolute lg:top-20 lg:left-0 lg:right-0 lg:bg-mainbg lg:mt-8 lg:z-100">
+       <div className=" navbar flex items-center justify-evenly transition-all duration-200 lg:-translate-x-full lg:flex-col lg:w-full lg:h-90vh lg:absolute lg:top-20 lg:left-0 lg:right-0 lg:bg-white lg:mt-8 lg:z-100">
            {
                pages.map((page)=>{
                 return (
