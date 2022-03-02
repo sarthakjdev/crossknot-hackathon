@@ -13,8 +13,8 @@ export default function About(){
         </div>
             <div className='flex  items-center justify-evenly m-auto gap-6 lg:flex-col-reverse mt-6'> 
                 <div className='w-quarter_past mr-14 lg:m-auto'>
-                <p className='leading-loose font-primary text-xl text-card_text lg:text-center m-auto'>🎀 CrossKnot is a mind-boggling 36-hours ⌛virtual hackathon, where the best of our practitioners and the brightest coders will come together solve real-world problems.</p>
-                <p className='leading-loose font-primary text-xl text-card_text lg:text-center m-auto'>CrossKnot is a young community which provides technical education 💻 to interested people, with a aim to help them become tech industry ready 🚀 </p>
+                <p className='leading-loose font-primary text-xl text-card_text lg:text-center m-auto'>🎀 A hacker is always creating something new. They put in long hours, try a hundred different solutions and ideas, and even fail a few times before getting the best result. But, never stop learning new things. And the goal of a hackathon is to work together, collaborate and build innovative things. </p>
+                <p className='leading-loose font-primary text-xl text-card_text lg:text-center m-auto'>CrossKnot is conducting a hackathon with that spirit - CrossKnot Hacks and inviting all developers and hackathon enthusiasts to participate in an exciting and engaging hackathon. CrossKnot Hackathon aims to encourage young and future developers to leave a digital footprint in the IT world. CrossKnot Hacks is scheduled to begin on April 16, 2022, with an estimated attendance of 2k hackers and we already have more than 200 registrants (as of 1st march).</p>
                 </div>
                 <div className='max-w-s lg:w-half'>
                 <Image src={aboutImage} alt="about illustration"/>

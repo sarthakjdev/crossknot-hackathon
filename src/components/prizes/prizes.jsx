@@ -8,7 +8,6 @@ import PrizeCard from './prizeCard'
 import prizesData from '../../data/prizeData'     // prizes data imported from the static file in the same project
 import SectionHead from '../sectionHeads'
 import prizeHead from '../../../public/images/pageHeads/prizes.svg'
- console.log("prizeHead ", prizeHead);
 
 export default function Prize(){
     return (
