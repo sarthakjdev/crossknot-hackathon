@@ -17,7 +17,7 @@ module.exports = [
         memberId: 1,
         memberIcon: vinitshahdeo, 
         memberName: 'Vinit Shahdeo',
-        memberDesignation: 'Founder',
+        memberDesignation: 'Advisor',
         memberDescription: 'lorem ipsum',
         memberTwitter: 'https://twitter.com/Vinit_Shahdeo',
         memberGithub: 'https://github.com/vinitshahdeo',
