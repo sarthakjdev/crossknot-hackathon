@@ -27,7 +27,7 @@ module.exports = [
         memberId: 2, 
         memberIcon: parthlimbad, 
         memberName: 'Parth Limbad', 
-        memberDesignation: 'Founder',
+        memberDesignation: 'Advisor',
         memberDescription: 'lorem ipsum',
         memberTwitter: 'https://twitter.com/IAmParthL',
         memberGithub: '/team',
