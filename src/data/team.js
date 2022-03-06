@@ -37,7 +37,7 @@ module.exports = [
         memberId: 3, 
         memberIcon: amankumar, 
         memberName: 'Aman Kumar', 
-        memberDesignation: 'Founder & Lead Organiser',
+        memberDesignation: 'Lead Organiser',
         memberDescription: 'lorem ipsum',
         memberTwitter: 'https://www.twitter.com/thisisaman01',
         memberGithub: 'https://github.com/thisisamank',
