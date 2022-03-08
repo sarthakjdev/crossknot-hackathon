@@ -33,6 +33,10 @@ const pages = [
         name: 'Team', 
         link: '/team'
     },    
+    {
+        name: 'Brochure',
+        link: '/brochure'
+    }
 
 ]
 

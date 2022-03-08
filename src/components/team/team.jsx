@@ -30,6 +30,5 @@ import teamHead from '../../../public/images/pageHeads/team.svg'
              }
              </div>
             </section>
-         </section>
      )
  }
