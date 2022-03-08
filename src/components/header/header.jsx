@@ -53,15 +53,13 @@ function toggleNavbar() {
     }
     
     const nav_lis = Array.from(navul.children)
-
     nav_lis.map((li)=> {
         li.addEventListener('click', ()=>{
             console.log('event trigerred')
-
-            if(navul.style.transform === 'translateX(0%)') {
+            if(navul.style.transform === 'translateX(0%)' ) {
                 navul.style.transform = 'translateX(-100%)'
                 body.style.overflowY = 'scroll'
-            }else {
+            }else if (navul.style.transform === 'translateX(-100%)' && window.screen.width > 768) {
                 navul.style.transform = 'translateX(0%)'
                 body.style.overflowY = 'hidden'
             }
@@ -90,7 +88,7 @@ return (
       </div>
 
       {/* ham toggle button for responsive view */}
-          <div className="flex-col hidden lg:flex" onClick={toggleNavbar}>
+          <div className="flex-col hidden lg:flex" onMouseDown={toggleNavbar}>
               <span className="bg-primary h-1 w-10 my-1"></span>
               <span className="bg-primary h-1 w-10 my-1"></span>
               <span className="bg-primary h-1 w-10 my-1"></span>
