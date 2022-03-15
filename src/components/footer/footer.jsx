@@ -21,10 +21,6 @@ const footerMenu = [
         url: 'https://blog.crossknotcommunity.tech/'
     },
     {
-        name: 'Press Kit',
-        url: 'https://drive.google.com/file/d/1CZRMklQp32SfJH9d2RBub-TEqTFzrCLb/view?usp=sharing'
-    },
-    {
         name: 'Code of Conduct', 
         url: 'https://github.com/crossknot-community/crossknot/blob/main/CODE_OF_CONDUCT.md'
     },
