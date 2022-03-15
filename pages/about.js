@@ -1,7 +1,5 @@
 import Head from 'next/head'
 
-import AboutSection from '../src/components/about/about'
-
 
 export default function About(){
     return(
@@ -9,7 +7,6 @@ export default function About(){
                 <Head>
                 <title>About | CrossKnot Hacks</title>
                 </Head>
-                <AboutSection />
             </>
     )
 }

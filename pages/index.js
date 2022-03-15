@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-
+import AboutSection from '../src/components/about/about'
 import HeroSection from '../src/components/hero/hero';
 
 export default function Home() {
@@ -19,6 +19,7 @@ export default function Home() {
             {/* Hero section */}
 
             <HeroSection />
+            <AboutSection />
 
        </main>
        </div>

@@ -66,16 +66,17 @@ const socials = [
 export default function Footer(){
     return (
         <footer className="flex items-center justify-center bg-footer_clr rounded-xl m-8 text-primary_dark px-14 py-6 md:flex-col md:px-8">
-               <div className="flex flex-col mx-40">
+               <div className="flex flex-col flex-wrap mx-40">
                         {
                             footerMenu.map((item)=>{
                                 return (
                                     <Link href={item.url} key={item.name}><a className="text-left py-2 text-xl font-extralight midLg:text-center">{item.name}</a></Link>                                )
                             })
                         }
-                    </div>
+                </div>
                 <div>
                     <Image src={footertitle} alt="footer illustration"/>
+                    <h3 className="flex flex-col text-center justify-center text-primary_dark">Copyright Ⓒ 2022 CrossKnot Community. All rights reserved.</h3>
                 </div>
                 <div className="flex flex-col">
                 <div className="flex lg:flex-col">
@@ -86,7 +87,7 @@ export default function Footer(){
                             {
                                 socials.map((social)=>{
                                     return (
-                                        <Link href={social.url} key={social.name} ><a className="hover:scale-110 transition-all duration-1000 ease-linear"><Image src={social.icon} alt={social.name}/></a></Link>
+                                        <Link href={social.url} key={social.name} ><a className="hover:scale-110 transition-all duration-1000 ease-linear" target="_blank"><Image src={social.icon} alt={social.name}/></a></Link>
                                     )
                                 })
                             }
@@ -94,7 +95,6 @@ export default function Footer(){
                     </div>
                 </div>
                 <hr className="my-4"/>
-                <h3 className="text-center mr-50 text-primary_dark">Copyright Ⓒ 2022 CrossKnot Community. All rights reserved.</h3>
                 </div>
         </footer>
     )

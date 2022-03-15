@@ -10,10 +10,6 @@ import logo from '../../../public/images/logo.svg'
 
 const pages = [
     { 
-        name: 'About', 
-        link: '/about'
-    },
-    { 
         name: 'Tracks', 
         link: '/tracks'
     },
