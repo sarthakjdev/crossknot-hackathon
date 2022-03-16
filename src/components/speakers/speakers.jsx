@@ -12,16 +12,16 @@ import speakersData from '../../data/speakers'
 import speakersHead from '../../../public/images/pageHeads/speakers.svg'
 import judgesHead from '../../../public/images/pageHeads/judges.svg'
 
-export default function Speakers(){
+export default function Speakers({speakers}){
     return (
         <section className="mx-20">
             <section className='flex flex-col my-10'>
-            <SectionHead image={speakersHead}/>
-            <div className='flex flex-wrap items-center justify-center m-auto gap-12 gap-y-20 mt-4'> 
+            <SectionHead sectionName={"Speakers"}/>
+            <div className='flex flex-wrap items-center justify-center m-auto gap-12 gap-y-24 mt-8'> 
             {
-                speakersData.map((speaker)=>{
+                speakers.map((speaker)=>{
                     return (
-                        <SpeakerCard key={speaker.id} speaker={speaker} />
+                        <SpeakerCard key={speaker.name} speaker={speaker} />
                     )}
                     )
             }
@@ -29,13 +29,13 @@ export default function Speakers(){
         </section>
 
         <section className="flex flex-col my-24">
-        <SectionHead image={judgesHead} />
+        <SectionHead sectionName={"Judges"} />
             <div className='flex flex-wrap items-center justify-center m-auto gap-12 gap-y-20 mt-4'> 
             {
-                speakersData.map((speaker)=>{
-                    if(speaker.judge) {
+                speakers.map((judge)=>{
+                    if(judge.judge) {
                         return (
-                            <SpeakerCard key={speaker.id} speaker={speaker} />
+                            <SpeakerCard key={judge.name} speaker={judge} />
                         )}
                     })
             }

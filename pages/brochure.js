@@ -7,7 +7,7 @@ export default function Prizes(){
         <Head>
         <title>Brochure | CrossKnot Hacks</title>
         </Head>
-        <iframe src="https://drive.google.com/file/d/1Q_WRYAoDbAKxfo8Xb1hNDDWz8W5uiUOk/preview" className='w-half m-auto' height='700px' allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/1Q_WRYAoDbAKxfo8Xb1hNDDWz8W5uiUOk/preview" className='w-half m-auto sm:w-quarter_past' height='700px' allow="autoplay"></iframe>
         </>
     )
 }

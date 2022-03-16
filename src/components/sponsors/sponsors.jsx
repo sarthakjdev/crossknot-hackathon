@@ -7,23 +7,22 @@
 
 import SectionHead from '../sectionHeads'
 import SponsorsCard from './sponsorsCard'
-import sponsorhead from "../../../public/images/pageHeads/sponsors.svg"
 
-const sponsorsType = ['title sponsor', 'platinum sponsor', 'gold sponsor', 'community partner']
+const sponsorsType = ['title', 'platinum', 'gold', 'community partners']
 
-export default function Sponsors(){
+export default function Sponsors({sponsors}){
     return (
-        <section className='flex flex-col mx-14 sm:mx-6'>
-            <SectionHead image={sponsorhead} />
+        <section className='flex flex-col mx-14 sm:mx-4'>
+            <SectionHead sectionName={"Sponsors & Partners"} />
             <div className='mt-9 flex justify-center item-center'>
             </div>
              {
                  sponsorsType.map((type)=>{
                      return (
-                        <>
-                        <SponsorsCard type={type} key={type} />
+                        <div key={type}>
+                        <SponsorsCard type={type} key={type} sponsors={sponsors} />
                         <hr />
-                        </>
+                        </div>
                      )
                  })
              }

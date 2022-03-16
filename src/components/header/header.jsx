@@ -51,7 +51,6 @@ function toggleNavbar() {
     const nav_lis = Array.from(navul.children)
     nav_lis.map((li)=> {
         li.addEventListener('click', ()=>{
-            console.log('event trigerred')
             if(navul.style.transform === 'translateX(0%)' ) {
                 navul.style.transform = 'translateX(-100%)'
                 body.style.overflowY = 'scroll'
