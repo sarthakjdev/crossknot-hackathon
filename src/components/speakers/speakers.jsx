@@ -7,10 +7,7 @@
 
 import SectionHead from '../sectionHeads'
 import SpeakerCard from './speakerCard'
-import speakersData from '../../data/speakers'
 
-import speakersHead from '../../../public/images/pageHeads/speakers.svg'
-import judgesHead from '../../../public/images/pageHeads/judges.svg'
 
 export default function Speakers({speakers}){
     return (

@@ -1,14 +1,11 @@
 import SectionHead from '../sectionHeads'
 import Image from 'next/image'
 import aboutImage from '../../../public/images/about.svg'
-import aboutus from "../../../public/images/hero/aboutus.svg"
-
-import aboutHead from '../../../public/images/pageHeads/about.svg'
 
 export default function About(){
     return (
         <section className='flex flex-col my-8 mx-14 sm:mx-2'>
-            <SectionHead images={aboutHead}/>
+            <SectionHead sectionName={"About Us"}/>
             <div className="relative flex">
         </div>
             <div className='flex  items-center justify-evenly m-auto gap-6 lg:flex-col-reverse mt-6'> 
