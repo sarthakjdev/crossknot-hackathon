@@ -14,7 +14,7 @@ import footertitle from '../../../public/images/footer/footertitle.svg'
 const footerMenu = [
     {
         name: 'About', 
-        url: '/about'
+        url: '/'
     },
     {
         name: 'CrossKnot Blog', 
@@ -22,7 +22,7 @@ const footerMenu = [
     },
     {
         name: 'Code of Conduct', 
-        url: 'https://github.com/crossknot-community/crossknot/blob/main/CODE_OF_CONDUCT.md'
+        url: 'https://github.com/crossknot-community/crossknot-hackathon/blob/main/CODE_OF_CONDUCT.md'
     },
 ]
 
