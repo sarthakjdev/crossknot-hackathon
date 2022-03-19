@@ -12,6 +12,7 @@ import vanshikatandon  from '../../public/images/teams/vanshika_tandon.png'
 import anushkavarshney from '../../public/images/teams/anushka_varshney.png'
 import nareshsain from '../../public/images/teams/naresh_sain.png'
 import chaynikaarora from '../../public/images/teams/chaynika_arora.png'
+import ishikakesarwani from '../../public/images/teams/ishikakesarwani.jpeg'
 module.exports = [
     {
         memberId: 1,
@@ -152,5 +153,15 @@ module.exports = [
         memberTwitter: '/team',
         memberGithub: '/team',
         memberLinkedin: 'https://www.linkedin.com/in/chaynika-arora/'
+    },
+    {
+        memberId: 14, 
+        memberIcon: ishikakesarwani, 
+        memberName: 'Ishika Kesarwani', 
+        memberDesignation: 'Sponsorship',
+        memberDescription: 'lorem ipsum',
+        memberTwitter: 'https://twitter.com/ishikakesarwan4',
+        memberGithub: 'https://github.com/ishikkkkaaaa',
+        memberLinkedin: 'https://www.linkedin.com/in/ishika-kesarwani-3b32811a6/'
     },
 ]
