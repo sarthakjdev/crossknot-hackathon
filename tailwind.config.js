@@ -64,7 +64,8 @@ module.exports = {
         quarter_past: '75%'
       },
       height: {
-        '90vh': '90vh'
+        '90vh': '90vh',
+        '30': '9rem'
       },
       zIndex: {
         '100': 100
