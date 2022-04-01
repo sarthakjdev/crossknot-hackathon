@@ -5,39 +5,41 @@ import thirdIcon from '../../public/images/prizes/third.svg'
 
 module.exports = [
     {
-        prizeId: 1, 
+        prizeId: 1,
         rank: 'first',
-        prizeIcon: firstIcon, 
-        prizeDesc:  [ 
-            "Rs. 5,000 INR 💰",
-            "Exclusive CrossKnot Swags to all team members 👕",
-            "Official Swags by Github 🧸",
-            "90% discount coupons on courses from Coding Blocks. 🎟",
-            "$2,000 free credits on Digital Ocean Account. 🌊"
-        ], 
+        prizeIcon: firstIcon,
+        prizeDesc: [
+            "Exclusive Schwag Pack by CrossKnot 👕",
+            "Official Schwag Pack by Github 🧸",
+            "Official Schwag Pack by Devfolio 👕",
+            "Lifetime access to Taskade 💯",
+            "$250 credits to Digital Ocean Account 🌊",
+            "Everyone Perks 🎉"
+        ],
     },
     {
-        prizeId: 2, 
+        prizeId: 2,
         rank: 'second',
-        prizeIcon: secondIcon, 
+        prizeIcon: secondIcon,
         prizeDesc: [
-            "Rs. 3,000 INR 💰",
-            "Exclusive CrossKnot Swags to all team members 👕",
-            "Official Swags by Github 🧸",
-            "90% discount coupons on courses from Coding Blocks. 🎟",
-            "$2,000 free credits on Digital Ocean Account. 🌊"
-        ], 
+            "Exclusive Schwag Pack by CrossKnot 👕",
+            "Official Schwag Pack by Codiga 👕",
+            "Official Schwag Pack by Devfolio 👕",
+            "Lifetime access to Taskade 💯",
+            "$125 credits to Digital Ocean Account 🌊",
+            "Everyone Perks 🎉"
+        ],
     },
     {
         prizeId: 3,
-        rank: 'third', 
-        prizeIcon: thirdIcon, 
+        rank: 'third',
+        prizeIcon: thirdIcon,
         prizeDesc: [
-            "Rs. 1,500 INR 💰",
-            "Exclusive CrossKnot Swags to all team members 👕",
-            "Official Swags by Github 🧸",
-            "90% discount coupons on courses from Coding Blocks. 🎟",
-            "$2,000 free credits on Digital Ocean Account. 🌊"
-        ], 
+            "Official Schwag Pack by Codiga 👕",
+            "Official Schwag Pack by Devfolio 👕",
+            "Lifetime access to Taskade 💯",
+            "$100 credits to Digital Ocean Account 🌊",
+            "Everyone Perks 🎉"
+        ],
     },
 ]
