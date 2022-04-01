@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import SpeakerSection from "../src/components/speakers/speakers"
 import airtableBase from '../src/utils/airtable'
+import configs from '../src/config/config'
 
 export default function Speakers({speakers}){
     return(
@@ -25,6 +26,6 @@ export async function getStaticProps(){
         props: {
             speakers: speakers
         },
-        revalidate: 3600,
+        revalidate: configs.REVALIDATE_TIME,
     }
 }

@@ -1,10 +1,10 @@
 import airtable from 'airtable'
-
+import config from '../config/config'
  airtable.configure({
-    endpointUrl: process.env.AIRTABLE_BASE_URL,
-    apiKey: process.env.AIRTABLE_API_KEY
+    endpointUrl: config.AIRTABLE_BASE_URL,
+    apiKey: config.AIRTABLE_API_KEY
 });
 
-const base = airtable.base(process.env.AIRTABLE_BASE_ID);
+const base = airtable.base(config.AIRTABLE_BASE_ID);
 
 export default base

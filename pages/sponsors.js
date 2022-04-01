@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import SponsorsSection from "../src/components/sponsors/sponsors"
 import airtableBase from '../src/utils/airtable'
-
+import configs from '../src/config/config'
 
 export default function Sponsors({sponsors}){
     return(
@@ -26,6 +26,6 @@ export async function getStaticProps(){
         props: {
             sponsors: sponsors
         },
-        revalidate: 3600,
+        revalidate: configs.REVALIDATE_TIME,
     }
 }

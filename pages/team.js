@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import TeamSection from "../src/components/team/team"
+import configs from '../src/config/config'
 import airtableBase from '../src/utils/airtable'
 
 export default function Team({team}){
@@ -24,6 +25,6 @@ export async function getStaticProps(){
         props: {
             team: team
         },
-        revalidate: 3600,
+        revalidate: configs.REVALIDATE_TIME,
     }
 }
