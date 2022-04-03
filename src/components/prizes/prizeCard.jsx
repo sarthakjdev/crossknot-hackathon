@@ -17,7 +17,7 @@ if(prizeData.id < 4) {
               <h3 className="text-center text-card_text text-2xl m-auto my-8 w-70">{prizeData.name}</h3>
                   {prizeData.prizeDesc.map((incentive)=> {
                       return(
-                          <li key={incentive} className="w-full m-auto p-1 list-disc">{incentive}</li>
+                          <li key={incentive} className="w-full m-auto p-1 list-disc text-card_text">{incentive}</li>
                       )
                   })}
             </div>
@@ -35,7 +35,7 @@ if(prizeData.id > 3){
                 </div>
                   {prizeData.prizeDesc.map((incentive)=> {
                       return(
-                          <li key={incentive} className="w-full m-auto p-1 list-disc">{incentive}</li>
+                          <li key={incentive} className="w-full m-auto p-1 list-disc text-card_text">{incentive}</li>
                       )
                   })}
             </div>
