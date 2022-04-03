@@ -8,8 +8,6 @@ import Image from "next/image"
 
 
 export default function PrizeCard({prizeData}){
- console.log("prizeData ", prizeData);
-
 
 if(prizeData.id < 4) {
     return (

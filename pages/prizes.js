@@ -29,9 +29,6 @@ export async function getStaticProps(){
         return a.id - b.id 
     })
     
-    console.log("prizes ", prizes);
-
-    
 
     return {
         props: {
