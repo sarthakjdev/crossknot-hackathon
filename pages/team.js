@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import TeamSection from "../src/components/team/team"
 import configs from '../src/config/config'
+import airtableConstants from '../src/constants/airtableConstants'
 import airtableBase from '../src/utils/airtable'
 
 export default function Team({team}){
@@ -16,7 +17,7 @@ export default function Team({team}){
 
 export async function getStaticProps(){
 
-    const data = await airtableBase('Team').select({maxRecords: 100,}).all()
+    const data = await airtableBase(airtableConstants.TEAM_TABLE).select({maxRecords: 100,}).all()
     let team = [];
     data.forEach(member => {
         team.push(member.fields)
