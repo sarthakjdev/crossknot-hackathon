@@ -17,7 +17,7 @@ export default function SponsorCard({ type, sponsors }){
                     sponsors.map((sponsor)=>{
                         if(sponsor.type === type){
                             return (
-                                <Link href={sponsor.url} key={sponsor.name}><a><Image src={sponsor.logo[0].url} height={200} alt={sponsor.id} width={200} key={sponsor.id}/></a></Link>
+                                <Link href={sponsor.url} key={sponsor.name}><a target="_blank"><Image src={sponsor.logo[0].url} height={200} alt={sponsor.id} width={200} key={sponsor.id}/></a></Link>
                             )
                         }
                     })
