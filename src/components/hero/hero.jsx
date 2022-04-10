@@ -4,10 +4,11 @@ import Link from "next/link";
 import { useEffect } from "react";
 import calendarIcon from "../../../public/images/calendar.svg";
 import locationIcon from "../../../public/images/location.svg";
-import discordIcon from '../../../public/images/discord.svg'
 import landingPageImage from "../../../public/images/hero/landingImage.svg";
 import Timer from '../timer'
 import headingImage from "../../../public/images/hero/heading.svg"
+import bgPattern from "../../../public/images/hero/bgPattern.svg"
+
 
 export default function HeroSection() {
 
@@ -24,16 +25,14 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="flex items-center justify-evenly lg:flex-col">
+    <section className="flex items-center justify-evenly lg:flex-col text-hero_section_text font-primary">
       <div className="flex flex-col justify-evenly items-center">
 
         {/* illustration for smaller screens */}
-      <div className="hidden md:flex"><Image src={landingPageImage} alt="landing page illustration" /></div>
+      <div className="hidden  w-quarter_past"><Image src={landingPageImage} alt="landing page illustration" /></div>
 
         {/* crossknot hacks heading */}
-        <div className="relative flex  justify-center items-center">
-          {/* <h1 className="absolute text-center text-8xl w-quarter_past stroke-text font-secondary font-extrabold md:m-auto md:text-6xl sm:text-4xl">Crossknot Hacks</h1> */}
-          {/* <h1 className=" text-center text-8xl w-quarter_past text-primary font-secondary font-extrabold md:m-auto md:text-6xl sm:text-4xl">Crossknot Hacks</h1> */}
+        <div className="relative flex  justify-center items-center lg:w-70">
           <Image src={headingImage} alt="crossknot heading" />
         </div>
 
@@ -46,15 +45,15 @@ export default function HeroSection() {
             16th - 17th April 2022
           </h2>
           <h2 className="items-center flex">
-            <i className="mr-2">
+            <i className="mr-4">
               <Image src={locationIcon} alt="locationIcon"  />
-            </i>{" "}
+            </i>
             Happening Online
           </h2>
         </div>
 
         {/* call-to-actions buttons */}
-        <div className="flex md:flex-col items-center mt-8 gap-4 md:justify-center md:gap-4">
+        <div className="flex md:flex-col items-center mt-8 gap-4 md:justify-center md:gap-4 md:mt-4">
           <div
             className="apply-button"
             data-hackathon-slug="crossknothacks"
@@ -66,10 +65,10 @@ export default function HeroSection() {
 
       {/* right side section of the landing page */}
       <div className="flex flex-col place-content-center items-center">
-            <div className="lg:hidden w-quarter_past"><Image src={landingPageImage} alt="landing page illustration" /></div>
+            <div className="lg:hidden w-70"><Image src={landingPageImage} alt="landing page illustration" /></div>
             {/* Timer for the hackathon to be kicked off */}
             <div className="flex flex-col">
-              <p className="text-center m-auto tracking-wide text-primary text-2xl mb-4 mt-8">hackathon kicks off in</p>
+              <p className="text-center m-auto tracking-wide text-primary text-2xl mb-4 lg:mt-8 sm:mt-4">hackathon kicks off in</p>
               <Timer />
             </div>
       </div>

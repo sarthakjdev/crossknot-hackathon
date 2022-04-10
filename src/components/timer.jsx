@@ -57,25 +57,25 @@ class CountDown extends Component {
     return (
       <div id="countdown" className="flex gap-6 text-primary_dark font-primary mb-10">
         <div className="col-4">
-          <div className="flex flex-col items-center justify-center bg-primary rounded-md py-6 px-4 w-20 sm:w-16">
+          <div className="flex flex-col items-center justify-center bg-primary_light rounded-md py-6 px-4 w-20 sm:w-16">
             <p id="day" className="text-center text-5xl">{days}</p>
             <span className="text-center sm:text-xs">Days</span>
           </div>
         </div>
         <div className="col-4">
-        <div className="flex flex-col items-center justify-center bg-primary rounded-md py-6 px-4 w-20 sm:w-16">
+        <div className="flex flex-col items-center justify-center bg-primary_light rounded-md py-6 px-4 w-20 sm:w-16">
             <p id="hour" className="text-center text-5xl">{hours}</p>
             <span className="text-center sm:text-xs">Hours</span>
           </div>
         </div>
         <div className="col-4">
-        <div className="flex flex-col items-center justify-center bg-primary rounded-md py-6 px-4 w-20 sm:w-16">
+        <div className="flex flex-col items-center justify-center bg-primary_light rounded-md py-6 px-4 w-20 sm:w-16">
             <p id="minute" className="text-center text-5xl">{minutes}</p>
             <span className="text-center sm:text-xs">Minutes</span>
           </div>
         </div>
         <div className="col-4">
-        <div className="flex flex-col items-center justify-center bg-primary rounded-md py-6 px-4 w-20 sm:w-16">
+        <div className="flex flex-col items-center justify-center bg-primary_light rounded-md py-6 px-4 w-20 sm:w-16">
             <p id="second" className="text-center text-5xl">{seconds}</p>
             <span className="text-center sm:text-xs">Seconds</span>
           </div>

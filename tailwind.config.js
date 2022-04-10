@@ -17,6 +17,7 @@ module.exports = {
         card_text: '#474747',
         footer_clr: '#D2EEDC',
         sponsor_clr: '#B6E6D4',
+        hero_section_text: '#075650',
       },
       typography: {
         DEAFAULT: {
@@ -52,8 +53,9 @@ module.exports = {
         'whirl': 'whirl 4s ease-in-out infinite' 
       },
       fontFamily: {
-        primary: ['Segoe UI', 'sans-serif'],
-        secondary: ['Product Sans', 'sans-serif']
+        primary: ['Gilroy', 'sans-serif'],
+        secondary: ['Product Sans', 'sans-serif'],
+        nunito: ['Nunito', 'sans-serif']
       },
       width: {
         '30': '30%',

@@ -1,13 +1,13 @@
 import Head from 'next/head'
-import TrackSection from "../src/components/tracks/tracks"
+import ThemeSection from "../src/components/themes/themes"
 
 export default function Tracks(){
     return(
             <>
             <Head>
-            <title>Tracks | CrossKnot Hacks</title>
+            <title>Themes | CrossKnot Hacks</title>
             </Head>
-            <TrackSection/>
+            <ThemeSection/>
             </>
     )
 }

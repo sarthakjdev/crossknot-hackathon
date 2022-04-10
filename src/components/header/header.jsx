@@ -7,34 +7,9 @@
 import Link from "next/link"
 import Image from "next/image"
 import logo from '../../../public/images/logo.svg'
+import { useRouter } from "next/router"
 
-const pages = [
-    { 
-        name: 'Tracks', 
-        link: '/tracks'
-    },
-    { 
-        name: 'Speakers', 
-        link: '/speakers'
-    },
-    { 
-        name: 'Partners', 
-        link: '/sponsors'
-    },
-    { 
-        name: 'Prizes', 
-        link: '/prizes'
-    },
-    { 
-        name: 'Team', 
-        link: '/team'
-    },    
-    {
-        name: 'Brochure',
-        link: '/brochure'
-    }
 
-]
 
 function toggleNavbar() {
     const navul = document.querySelector('.navbar')
@@ -63,6 +38,36 @@ function toggleNavbar() {
 }
 
 export default function Header(){
+    
+    const router = useRouter()
+
+    const pages = [
+        { 
+            name: 'Themes', 
+            link: '/themes'
+        },
+        { 
+            name: 'Speakers', 
+            link: '/speakers'
+        },
+        { 
+            name: 'Partners', 
+            link: '/sponsors'
+        },
+        { 
+            name: 'Prizes', 
+            link: `${router.route === '/'? '#prizes': '/#prizes'}`
+        },
+        { 
+            name: 'Team', 
+            link: '/team'
+        },    
+        {
+            name: 'Brochure',
+            link: '/brochure'
+        }
+    
+    ]
 
 return (
        <header className="flex items-center justify-between px-8 py-5 lg:relative">
@@ -76,7 +81,7 @@ return (
            {
                pages.map((page)=>{
                 return (
-                    <Link href={page.link} key={page.name}><a className="text-primary_dark text-xl font-primary py-2 px-6 hover:rounded-full hover:text-white hover:bg-primary transition-all duration-200 mx-2 lg:my-8 uppercase active:bg-primary active:text-white active:rounded-full">{page.name}</a></Link>
+                    <Link href={page.link} key={page.name}><a className="  text-hero_section_text text-xl font-primary py-2 px-4 hover:rounded-full hover:text-white hover:bg-primary transition-all duration-200 mx-2 lg:my-8  active:bg-primary active:text-white active:rounded-full">{page.name}</a></Link>
                 )
                })
            }

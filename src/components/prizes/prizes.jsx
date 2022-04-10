@@ -10,7 +10,7 @@ import SectionHead from '../sectionHeads'
 export default function Prize({prizes}){
 
     return (
-        <section className='mx-14 my-8 sm:mx-6'>
+        <section className='mx-14 my-8 sm:mx-6' id='prizes'>
             <SectionHead sectionName={'Prizes'} />
             <div className='mt-9 flex justify-center item-center'>
             </div>

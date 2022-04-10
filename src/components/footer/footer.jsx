@@ -61,7 +61,7 @@ const socials = [
 
 export default function Footer(){
     return (
-        <footer className="flex items-center justify-center bg-footer_clr rounded-xl m-8 text-primary_dark px-14 py-6 md:flex-col md:px-8">
+        <footer className="flex items-center justify-center bg-footer_clr rounded-xl m-8 text-primary_dark px-14 py-6 md:flex-col md:px-8 font-primary">
                <div className="flex flex-col flex-wrap mx-40">
                         {
                             footerMenu.map((item)=>{

@@ -1,24 +1,24 @@
 /**
  * 
- * Tracks Section Component
+ * Themes Section Component
  * 
  */
 
 
 import SectionHead from '../sectionHeads'
-import TrackCard from './trackCard'
+import ThemeCard from './themeCard'
 
-import tracksData from '../../data/trackData'
+import themesData from '../../data/themeData'
 
 export default function Tracks(){
     return (
         <section className='flex flex-col my-8 mx-14'>
-            <SectionHead sectionName={'Tracks'} />
+            <SectionHead sectionName={'Themes'} />
             <div className='flex flex-wrap items-center justify-center m-auto my-6 gap-6'> 
             {
-                tracksData.map((track)=>{
+                themesData.map((theme)=>{
                     return (
-                        <TrackCard key={track.trackId} track={track} />
+                        <ThemeCard key={theme.themeId} theme={theme} />
                     )}
                     )
             }

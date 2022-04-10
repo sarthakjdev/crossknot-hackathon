@@ -9,7 +9,7 @@
  import TeamNameHead from './teamHead'
  import TeamMemberCard from './teamCard'
  
- const depts = ['Open Source & Engineering', 'Media & Outreach', 'UI/UX Designing', 'Market & Sponsorship']
+ const depts = ['Open Source & Engineering', 'Media & Outreach', 'UI/UX Designing', 'Market & Sponsorship', 'Volunteers']
 
  export default function Teams({team}){
      return (
@@ -29,7 +29,7 @@
              {
                  depts.map((dept)=>{
                      return (
-                         <div key={dept} className="flex flex-col my-10 sm:my-16 sm:mb-20 sm:gap-2 sm:mb-10">
+                         <div key={dept} className="flex flex-col my-10 sm:my-16 sm:mb-20 sm:gap-2">
                             <TeamNameHead sectionName={dept}  />
                             <div className='flex flex-wrap items-center justify-center m-auto gap-20 gap-y-40 mt-4 sm:gap-y-24'>
                             {
