@@ -25,7 +25,7 @@ export default function Speakers({speakers}){
             </div>
         </section>
 
-        <section className="flex flex-col my-24">
+        <section className="flex flex-col my-24 sm:mt-40">
         <SectionHead sectionName={"Judges"} />
             <div className='flex flex-wrap items-center justify-center m-auto gap-12 gap-y-20 mt-4'> 
             {
