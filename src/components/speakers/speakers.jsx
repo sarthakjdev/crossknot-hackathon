@@ -14,7 +14,7 @@ export default function Speakers({speakers}){
         <section className="mx-20">
             <section className='flex flex-col my-10'>
             <SectionHead sectionName={"Speakers"}/>
-            <div className='flex flex-wrap items-center justify-center m-auto gap-12 gap-y-24 mt-8'> 
+            <div className='flex flex-wrap items-center justify-center m-auto gap-12 gap-y-32 mt-8'> 
             {
                 speakers.map((speaker)=>{
                     return (
