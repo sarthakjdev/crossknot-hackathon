@@ -20,9 +20,9 @@
  
                      {/* Team social handles to be dispalyed on hover */}
                      <div className="absolute top-0 bottom-0 left-0 right-0 hidden z-20 gap-2 place-content-center items-center group-hover:flex transition-all duration-200">
-                         {member.twitter && <Link href={member.twitter}><a><i><Image src={twitterIcon} alt="twitter" /></i></a></Link>}
-                         {member.github && <Link href={member.github}><a><i><Image src={githubIcon} alt="github" /></i></a></Link>}
-                         {member.linkedin && <Link href={member.linkedin}><a><i><Image src={linkedinIcon} alt="linkedin" /></i></a></Link>}
+                         {member.twitter && <Link href={member.twitter}><a target="_blank"><i><Image src={twitterIcon} alt="twitter" /></i></a></Link>}
+                         {member.github && <Link href={member.github}><a target="_blank"><i><Image src={githubIcon} alt="github" /></i></a></Link>}
+                         {member.linkedin && <Link href={member.linkedin}><a target="_blank"><i><Image src={linkedinIcon} alt="linkedin" /></i></a></Link>}
                      </div>
                  </div>
  

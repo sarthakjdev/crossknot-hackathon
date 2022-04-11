@@ -15,20 +15,7 @@ import githubIcon from "../../../public/images/socials/github.svg"
 
 
 export default function SpeakerCard({speaker}){
-
-     function checkForSocials(speaker){
-    console.log("speaker ", speaker);
-        if(speaker.github) {
-            {console.log("github exisits")}
-            <Link href={speaker.github}><a><i><Image src={githubIcon} alt="github" /></i></a></Link>
-        }
-        if(speaker.twitter) {
-            <Link href={speaker.twitter}><a><i><Image src={twitterIcon} alt="twitter" /></i></a></Link>
-        }
-        if(speaker.linkedin) {
-            <Link href={speaker.linkedin}><a><i><Image src={linkedinIcon} alt="linkedin" /></i></a></Link>
-        }
-    }
+ console.log("speaker ", speaker);
     return (
             <div className="flex flex-col relative items-center justify-center">
                 <div className="relative group">
@@ -37,9 +24,9 @@ export default function SpeakerCard({speaker}){
 
                     {/* Speakers social handles to be dispalyed on hover */}
                     <div className="absolute top-0 bottom-0 left-0 right-0 hidden z-20 gap-2 place-content-center items-center group-hover:flex transition-all duration-200">
-                        {speaker.github &&  <Link href={speaker.github}><a><i><Image src={githubIcon} alt="github" /></i></a></Link>}
-                        {speaker.linkedin && <Link href={speaker.linkedin}><a><i><Image src={linkedinIcon} alt="linkedin" /></i></a></Link>}
-                        {speaker.twitter && <Link href={speaker.twitter}><a><i><Image src={twitterIcon} alt="twitter" /></i></a></Link>}
+                        {speaker.github &&  <Link href={speaker.github}><a target="_blank"><i><Image src={githubIcon} alt="github" /></i></a></Link>}
+                        {speaker.linkedin && <Link href={speaker.linkedin}><a target="_blank"><i><Image src={linkedinIcon} alt="linkedin" /></i></a></Link>}
+                        {speaker.twitter && <Link href={speaker.twitter}><a target="_blank"><i><Image src={twitterIcon} alt="twitter" /></i></a></Link>}
                     </div>
                 </div>
 
