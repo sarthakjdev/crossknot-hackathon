@@ -63,6 +63,7 @@ module.exports = {
         '40': '40%',
         '70': '70%',
         '90': '90%',
+        '12rem': '12rem',
         '16rem': '16rem',
         '15rem': '15rem',
         half: '50%',
@@ -71,6 +72,7 @@ module.exports = {
       height: {
         '90vh': '90vh',
         '30': '9rem',
+        '11rem': '11rem',
         '14rem': '14rem'
       },
       zIndex: {
