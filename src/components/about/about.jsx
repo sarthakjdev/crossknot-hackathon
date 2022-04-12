@@ -4,7 +4,7 @@ import aboutImage from '../../../public/images/about.svg'
 
 export default function About(){
     return (
-        <section className='flex flex-col my-8 mx-14 sm:mx-2'>
+        <section className='flex flex-col my-8 mx-14 sm:mx-2 bg-primary_extra_light  rounded-2xl p-10'>
             <SectionHead sectionName={"About Us"}/>
             <div className="relative flex">
         </div>

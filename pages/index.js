@@ -2,13 +2,17 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import AboutSection from '../src/components/about/about'
-import HeroSection from '../src/components/hero/hero';
+import HeroSection from '../src/components/hero/hero'
 import PrizeSection from "../src/components/prizes/prizes"
+import MentorSection from '../src/components/speakers/speakers'
+import ThemesSection from '../src/components/themes/themes'
+import TeamsSection from '../src/components/team/team'
+import EventSection from '../src/components/events/events'
 import airtableConstants from '../src/constants/airtableConstants'
 import airtableBase from '../src/utils/airtable'
 import configs from '../src/config/config'
 
-export default function Home({prizes}) {
+export default function Home({prizes, speakers, team, events}) {
 
   return (
     <div className={styles.container}>
@@ -24,6 +28,10 @@ export default function Home({prizes}) {
 
             <HeroSection />
             <AboutSection />
+            <ThemesSection />
+            <MentorSection speakers={speakers} />
+            <EventSection events={events} />
+            <TeamsSection team={team} />
             <PrizeSection prizes={prizes}/>
        </main>
        </div>
@@ -32,12 +40,30 @@ export default function Home({prizes}) {
 
 export async function getStaticProps(){
 
-  const data = await airtableBase(airtableConstants.PRIZE_TABLE).select({maxRecords: 100,}).all()
+  const prizeData = await airtableBase(airtableConstants.PRIZE_TABLE).select({maxRecords: 100,}).all()
   let prizes = []
-  data.forEach(prize => {
+  prizeData.forEach(prize => {
       prize.fields.prizeDesc = prize.fields.prizeDesc.split('|')
       prizes.push(prize.fields)
   })
+
+  const speakersData = await airtableBase(airtableConstants.SPEAKERSJUDGES_TABLE).select({maxRecords: 100,}).all()
+  let speakers = []
+  speakersData.forEach(speaker => {
+      speakers.push(speaker.fields)
+  })
+
+  const teamsData = await airtableBase(airtableConstants.TEAM_TABLE).select({maxRecords: 100,}).all()
+  let team = [];
+  teamsData.forEach(member => {
+      team.push(member.fields)
+  });
+
+  const eventData = await airtableBase(airtableConstants.EVENT_TABLE).select({maxRecords: 100,}).all()
+  let events = [];
+  eventData.forEach(event => {
+      events.push(event.fields)
+  });
   
   // sorting the prize data
   prizes.sort((a ,b)=>{
@@ -47,7 +73,10 @@ export async function getStaticProps(){
 
   return {
       props: {
-          prizes: prizes
+          prizes: prizes, 
+          team: team,
+          speakers: speakers,
+          events: events
       },
       revalidate: configs.REVALIDATE_TIME,
   }

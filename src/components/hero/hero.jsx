@@ -8,7 +8,7 @@ import landingPageImage from "../../../public/images/hero/landingImage.svg";
 import Timer from '../timer'
 import headingImage from "../../../public/images/hero/heading.svg"
 import bgPattern from "../../../public/images/hero/bgPattern.svg"
-
+import gdscLogo from '../../../public/images/hero/gdsc.svg'
 
 export default function HeroSection() {
 
@@ -60,8 +60,13 @@ export default function HeroSection() {
             data-button-theme="dark"
           ></div>
           <Link href="https://discord.gg/ScREataGaY"><a><button className="flex items-center justify-around h-12 px-6 py-2 text-white bg-primary rounded-md border-primary border-2 hover:text-primary hover:bg-white transition-all duration-150">Join Our Discord</button></a></Link>
-        </div>
+        </div> 
+      <div className="flex items-center justify-center gap-4 ">
+        <p className="uppercase text-card_text font-primary ">Brought to you by </p>
+        <Image src={gdscLogo} alt="gdsc logo"  height={160} width={160}/>
       </div>
+      </div>
+
 
       {/* right side section of the landing page */}
       <div className="flex flex-col place-content-center items-center">

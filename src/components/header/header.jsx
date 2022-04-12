@@ -47,8 +47,12 @@ export default function Header(){
             link: '/themes'
         },
         { 
-            name: 'Speakers', 
-            link: '/speakers'
+            name: 'Mentors', 
+            link: '/mentors'
+        },
+        { 
+            name: 'Events', 
+            link: '/events'
         },
         { 
             name: 'Partners', 
@@ -56,7 +60,7 @@ export default function Header(){
         },
         { 
             name: 'Prizes', 
-            link: `${router.route === '/'? '#prizes': '/#prizes'}`
+            link: '/prizes'
         },
         { 
             name: 'Team', 

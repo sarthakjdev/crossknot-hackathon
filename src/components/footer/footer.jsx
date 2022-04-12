@@ -44,7 +44,7 @@ const socials = [
     },
     {
         name: 'youtube', 
-        url: '',
+        url: 'https://www.youtube.com/channel/UCU79vWuo5sQEapub4bFvrlg',
         icon: ytIcon
     },
     {

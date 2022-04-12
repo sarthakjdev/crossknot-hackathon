@@ -10,6 +10,7 @@ module.exports = {
         mainbg: '#FEFBEA',
         primary: '#0EB29F',
         primary_light: 'rgba(14, 178, 159, 0.3)',
+        primary_extra_light: '#CBF0E9',
         primary_dark: '#075650',
         secondary: '#656565',
         card_light: '#F4C456', 
@@ -61,13 +62,16 @@ module.exports = {
         '30': '30%',
         '40': '40%',
         '70': '70%',
+        '90': '90%',
         '16rem': '16rem',
+        '15rem': '15rem',
         half: '50%',
         quarter_past: '75%'
       },
       height: {
         '90vh': '90vh',
-        '30': '9rem'
+        '30': '9rem',
+        '14rem': '14rem'
       },
       zIndex: {
         '100': 100

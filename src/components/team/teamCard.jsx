@@ -13,24 +13,24 @@
  
  export default function TeamMemberCard({member}){
      return (
-             <div className="flex flex-col relative items-center justify-center">
-                 <div className="relative group">
-                     {/* Team Member image */}
-                     <Image src={member.picture[0].url} alt={member.name} height={200} width={200} className="border-primary_dark border-4 rounded-full z-10 group-hover:blur-sm transition-all duration-50 grayscale group-hover:grayscale-0"  />
- 
-                     {/* Team social handles to be dispalyed on hover */}
-                     <div className="absolute top-0 bottom-0 left-0 right-0 hidden z-20 gap-2 place-content-center items-center group-hover:flex transition-all duration-200">
-                         {member.twitter && <Link href={member.twitter}><a target="_blank"><i><Image src={twitterIcon} alt="twitter" /></i></a></Link>}
-                         {member.github && <Link href={member.github}><a target="_blank"><i><Image src={githubIcon} alt="github" /></i></a></Link>}
-                         {member.linkedin && <Link href={member.linkedin}><a target="_blank"><i><Image src={linkedinIcon} alt="linkedin" /></i></a></Link>}
-                     </div>
-                 </div>
- 
-                 {/* Team's member name and designation */}
-                 <div className="bg-white w-12rem text-primary_dark pb-4 pt-10 px-6 flex flex-col items-center justify-center border-grey border-2 rounded-lg absolute top-40 w-16rem">
-                 <h4 className="text-center font-primary font-extrabold text-xl">{member.name}</h4>
-                 <h5 className="text-center font-primary font-extralight">{member.role}</h5>
-                 </div>
-             </div>
+        <div className="flex flex-col relative items-center justify-center">
+        <div className=" group rounded-full border-8 border-primary flex justify-center z-10">
+            {/* Member image */}
+            <Image src={member.picture[0].url} alt={member.name} height={150} width={150} className="border-primary_dark border-4 rounded-full z-10 " />
+        </div>
+
+        {/* Member's name and designation */}
+        <div className="bg-white px-2 flex flex-col flex-wrap items-center justify-center border-grey border-2 rounded-lg absolute top-20 h-14rem w-15rem">
+            <h4 className="text-center font-primary font-extrabold mt-16">{member.name}</h4>
+            <h5 className="text-center font-primary my-2">{member.role}</h5>
+
+        {/* Member social handles to be dispalyed on hover */}
+            <div className="flex items-center justify-around gap-4">
+                {member.github &&  <Link href={member.github}><a target="_blank"><i><Image src={githubIcon} alt="github" /></i></a></Link>}
+                {member.linkedin && <Link href={member.linkedin}><a target="_blank"><i><Image src={linkedinIcon} alt="linkedin" /></i></a></Link>}
+                {member.twitter && <Link href={member.twitter}><a target="_blank"><i><Image src={twitterIcon} alt="twitter" /></i></a></Link>}
+            </div>
+        </div>
+    </div>
      )
  }

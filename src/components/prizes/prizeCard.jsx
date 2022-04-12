@@ -5,9 +5,11 @@
  */
 
 import Image from "next/image"
-
+import { useRouter } from "next/router"
 
 export default function PrizeCard({prizeData}){
+
+    const router = useRouter()
 
 if(prizeData.id < 4) {
     return (
@@ -25,8 +27,9 @@ if(prizeData.id < 4) {
     )
 }
 
-if(prizeData.id > 3){
+if(prizeData.id > 3 ){
     return (
+        router.route === '/prizes' &&
         <div className="flex flex-col items-center justify-center border-card_dark border-4 rounded-xl p-2 bg-white sm:w-full sm:mx-2 sm:p-1 h-full font-primary font-extrabold">
             <div className="flex flex-col border-x-card_light border-card_dark border-4 py-10 px-4 sm:p-6 h-full rounded-xl">
                 <div className="flex items-center justify-between">
