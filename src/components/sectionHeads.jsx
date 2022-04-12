@@ -12,7 +12,7 @@ export default function PageHeads({ sectionName}){
 
         <div className="relative items-center text-7xl section-head my-6 md:m-auto sm:text-5xl justify-center h-20 w-full font-nunito font-extrabold">
             <h2 className="absolute top-0 left-0 section-head-outlined  text-transparent text-center sm:m-auto right-0 bottom-0">{sectionName}</h2>
-            <h2 className="absolute top-1 left-1  text-primary text-center sm:m-auto right-0 bottom-0">{sectionName}</h2>
+            <h2 className="absolute top-1 left-1 ssm:top-0.5 sm:left-0.5 text-primary text-center sm:m-auto right-0 bottom-0">{sectionName}</h2>
         </div>
     )
 }
