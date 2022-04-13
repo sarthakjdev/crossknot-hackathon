@@ -62,7 +62,7 @@ export default function HeroSection() {
           <Link href="https://discord.gg/ScREataGaY"><a><button className="flex items-center justify-around h-12 px-6 py-2 text-white bg-primary rounded-md border-primary border-2 hover:text-primary hover:bg-white transition-all duration-150">Join Our Discord</button></a></Link>
         </div> 
       <div className="flex items-center justify-center gap-4 ">
-        <p className="uppercase text-card_text font-primary ">Brought to you by </p>
+        <p className="uppercase text-card_text font-primary ">In collaboration with </p>
         <Image src={gdscLogo} alt="gdsc logo"  height={160} width={160}/>
       </div>
       </div>
