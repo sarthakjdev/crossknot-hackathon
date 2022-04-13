@@ -1,5 +1,5 @@
 import SectionHead from '../sectionHeads'
-import {useState, useEffect} from 'react'
+import {useState, useEffect, useRef} from 'react'
 import ScheduleRow from "./scheduleRow"
 
 export default function Schedule({schedule}){
@@ -21,7 +21,11 @@ export default function Schedule({schedule}){
     
     const [day, setday] = useState(1)
     const [dayData, setdayData] = useState(schedule.filter((event)=>{ if (event.day === '1' ){return event} else { return }}))
-    
+
+    useEffect(()=>{
+         setdayData(schedule.filter((event)=>{ if (event.day === day.toString() ){return event} else { return }}))
+    }, [day, schedule])
+
     return (
         <section className="font-primary" id='schedule'>
             <SectionHead sectionName={'Schedule'} />
@@ -32,7 +36,7 @@ export default function Schedule({schedule}){
                             return(
                                 <button key={dayBtn.id} className={`p-2 px-4 text-primary bg-white border-2 border-primary active:text-white active:bg-primary ${dayBtn.id === day? 'bg-primary text-white':null}`} onClick={()=> {        
                                     setday(dayBtn.id)
-                                    setdayData(schedule.filter((event)=>{ if (event.day === day.toString() ){return event} else { return }}))}}>{dayBtn.name}</button>
+                                }}>{dayBtn.name}</button>
                             )
                         })
                     }
