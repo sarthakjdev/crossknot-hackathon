@@ -11,11 +11,13 @@ import Link from 'next/link'
 import twitterIcon from "../../../public/images/socials/twitter.svg"
 import linkedinIcon from "../../../public/images/socials/linkedin.svg"
 import githubIcon from "../../../public/images/socials/github.svg"
+import { useRouter } from "next/router"
 
 
 
 
 export default function SpeakerCard({speaker}){
+    const router = useRouter()
     return (
             <div className="flex flex-col relative items-center justify-center">
                 <div className="relative group rounded-full border-8 sm:border-4 border-primary flex justify-center z-10">
@@ -24,8 +26,8 @@ export default function SpeakerCard({speaker}){
                 </div>
 
                 {/* Speaker's name and designation */}
-                <div className="bg-white px-6 flex flex-col items-center justify-center border-grey border-2 rounded-lg absolute top-20 sm:top-14 h-14rem w-15rem sm:w-12rem sm:h-11rem">
-                    <h4 className="text-center font-primary font-extrabold mt-14 sm:mt-6">{speaker.name}</h4>
+                <div className={`bg-white px-6 flex flex-col items-center justify-center border-grey border-2 rounded-lg absolute top-20  h-14rem w-15rem  ${router.route === '/mentors'? 'sm:w-12rem sm:h-11rem sm:top-14': null}`}>
+                    <h4 className={`text-center font-primary font-extrabold mt-14  ${router.route === '/mentors'? 'sm:mt-6': null}`}>{speaker.name}</h4>
                     <h5 className="text-center font-primary ">{speaker.desc}</h5>
 
                 {/* Speakers social handles to be dispalyed on hover */}
