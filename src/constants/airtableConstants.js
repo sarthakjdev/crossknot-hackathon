@@ -3,7 +3,8 @@ const airtableConstants = {
     SPONSORS_TABLE: 'Sponsors',
     SPEAKERSJUDGES_TABLE: 'Speakers&Judges',
     PRIZE_TABLE: 'Prizes',
-    EVENT_TABLE: 'Events'
+    EVENT_TABLE: 'Events',
+    SCHEDULE_TABLE: 'Timeline'
 }
 
 export default airtableConstants

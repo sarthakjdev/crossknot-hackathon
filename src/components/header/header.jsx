@@ -69,6 +69,10 @@ export default function Header(){
         {
             name: 'Brochure',
             link: '/brochure'
+        },
+        {
+            name: 'Schedule',
+            link: '#schedule'
         }
     
     ]
