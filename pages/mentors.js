@@ -18,7 +18,6 @@ export default function Speakers({mentors}){
 export async function getStaticProps(){
 
     const data = await airtableBase(airtableConstants.SPEAKERSJUDGES_TABLE).select({maxRecords: 100,}).all()
-    console.log("data ", data);
     let mentors = []
     data.forEach(mentor => {
         mentors.push(mentor.fields)
