@@ -26,7 +26,6 @@ export default function Speakers({guests}){
                     {
                         if(guest.judge){
                             if (router.route === '/'){
-                                console.log(guest)
                                 return (
                                     index<4 && <GuestCard key={guest.name} guest={guest} />
                                 )}else{
