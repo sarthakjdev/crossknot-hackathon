@@ -50,7 +50,7 @@
                  })
              }
              </div>
-             {router.route ==='/' && <SeeMoreButton url={'/mentors'} className="mt-40" align={'bottom'}/>}
+             {router.route ==='/' && <SeeMoreButton url={'/team'} className="mt-40" align={'bottom'}/>}
             </section>
      )
  }
