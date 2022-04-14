@@ -47,8 +47,8 @@ export default function Header(){
             link: '/themes'
         },
         { 
-            name: 'Mentors', 
-            link: '/mentors'
+            name: 'Guests', 
+            link: '/guests'
         },
         { 
             name: 'Events', 
@@ -72,7 +72,7 @@ export default function Header(){
         },
         {
             name: 'Schedule',
-            link: '#schedule'
+            link: `${router.route === '/'? '#schedule': '/#schedule'}`
         }
     
     ]

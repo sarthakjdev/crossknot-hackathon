@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 import AboutSection from '../src/components/about/about'
 import HeroSection from '../src/components/hero/hero'
 import PrizeSection from "../src/components/prizes/prizes"
-import MentorSection from '../src/components/speakers/speakers'
+import GuestsSection from '../src/components/guests/guests'
 import ThemesSection from '../src/components/themes/themes'
 import TeamsSection from '../src/components/team/team'
 import EventSection from '../src/components/events/events'
@@ -13,7 +13,7 @@ import airtableConstants from '../src/constants/airtableConstants'
 import airtableBase from '../src/utils/airtable'
 import configs from '../src/config/config'
 
-export default function Home({prizes, speakers, team, events, schedule}) {
+export default function Home({prizes, guests, team, events, schedule}) {
 
   return (
     <div className={styles.container}>
@@ -30,7 +30,7 @@ export default function Home({prizes, speakers, team, events, schedule}) {
             <HeroSection />
             <AboutSection />
             <ThemesSection />
-            <MentorSection speakers={speakers} />
+            <GuestsSection guests={guests} />
             <EventSection events={events} />
             <TeamsSection team={team} />
             <ScheduleSection schedule={schedule} />
@@ -49,10 +49,10 @@ export async function getStaticProps(){
       prizes.push(prize.fields)
   })
 
-  const speakersData = await airtableBase(airtableConstants.SPEAKERSJUDGES_TABLE).select({maxRecords: 100,}).all()
-  let speakers = []
-  speakersData.forEach(speaker => {
-      speakers.push(speaker.fields)
+  const guestsData = await airtableBase(airtableConstants.JUDGES_TABLE).select({maxRecords: 100,}).all()
+  let guests = []
+  guestsData.forEach(guest => {
+      guests.push(guest.fields)
   })
 
   const teamsData = await airtableBase(airtableConstants.TEAM_TABLE).select({maxRecords: 100,}).all()
@@ -82,13 +82,20 @@ export async function getStaticProps(){
     schedule.sort((a ,b)=>{
       return Number(a.eventId) - Number(b.eventId)
   })
+
+      // sorting the guests data
+      guests.sort((a ,b)=>{
+        return Number(a.id) - Number(b.id)
+    })
   
 
   return {
       props: {
           prizes: prizes, 
           team: team,
-          speakers: speakers,
+          guests: {
+            judges: guests
+          },
           events: events,
           schedule: schedule
       },

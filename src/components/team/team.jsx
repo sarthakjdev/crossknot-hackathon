@@ -6,7 +6,7 @@
  */
 
  import SectionHead from '../sectionHeads'
- import TeamNameHead from './teamHead'
+ import SectionSubhead from  '../sectionSubhead'
  import TeamMemberCard from './teamCard'
  import SeeMoreButton from '../seeMoreButton'
  import { useRouter } from 'next/router'
@@ -33,7 +33,7 @@
                  depts.map((dept)=>{
                      return (
                          <div key={dept} className="flex flex-col my-24 mt-30 sm:my-16 sm:mb-20 sm:gap-2 mx-20">
-                            <TeamNameHead sectionName={dept}  />
+                            <SectionSubhead sectionName={dept}  />
                             <div className={`flex flex-wrap items-center justify-center m-auto gap-32 gap-y-40 mt-4 sm:gap-y-30 ${router.route === '/'? 'gap-24': 'gap-32 gap-y-40'}`}>
                             {
                                 team.map((teamMember)=>{
