@@ -15,10 +15,10 @@ const footerMenu = [
     name: "About",
     url: "/",
   },
-  {
-    name: "CrossKnot Blog",
-    url: "https://blog.crossknotcommunity.tech/",
-  },
+//   {
+//     name: "CrossKnot Blog",
+//     url: "https://blog.crossknotcommunity.tech/",
+//   },
   {
     name: "Code of Conduct",
     url: "https://github.com/crossknot-community/crossknot-hackathon/blob/main/CODE_OF_CONDUCT.md",
