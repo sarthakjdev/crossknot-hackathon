@@ -64,7 +64,7 @@ jobs:
         uses: actions/setup-node@v2
 
       - name: Install Vercel CLI
-        run: yarn -g add vercel@canary
+        run: yarn global add vercel@canary
 
       - name: Install Dependencies
         run: yarn --frozen-lockfile

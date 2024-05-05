@@ -7,6 +7,7 @@ import TeamsSection from "../src/components/team/team";
 import airtableConstants from "../src/constants/airtableConstants";
 import airtableBase from "../src/utils/airtable";
 import configs from "../src/config/config";
+import V1PostEventStats from "../src/components/2022-stats";
 
 export default function Home({ prizes, guests, team, events, schedule }) {
   return (
@@ -24,13 +25,11 @@ export default function Home({ prizes, guests, team, events, schedule }) {
         {/* Hero section */}
 
         <HeroSection />
+        <V1PostEventStats />
         <AboutSection />
         <ThemesSection />
-        {/* <GuestsSection guests={guests} /> */}
-        {/* <EventSection events={events} /> */}
+
         <TeamsSection team={team} />
-        {/* <ScheduleSection schedule={schedule} /> */}
-        {/* <PrizeSection prizes={prizes}/> */}
       </main>
     </div>
   );
