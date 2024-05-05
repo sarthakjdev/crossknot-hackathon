@@ -1,8 +1,7 @@
-
 /**
- * 
+ *
  * Timer Component for the Crossknot hacks hackathon
- * 
+ *
  */
 
 import React, { Component } from "react";
@@ -15,7 +14,7 @@ class CountDown extends Component {
       minutes: 0,
       hours: 0,
       secounds: 0,
-      time_up: ""
+      time_up: "",
     };
     this.x = null;
     this.deadline = null;
@@ -42,12 +41,12 @@ class CountDown extends Component {
         minutes: 0,
         hours: 0,
         seconds: 0,
-        time_up: "TIME IS UP"
+        time_up: "TIME IS UP",
       });
     }
   }
   componentDidMount() {
-    this.deadline = new Date("April 16, 2022 10:00:00").getTime();
+    this.deadline = new Date("May 15, 2024 10:00:00").getTime();
 
     this.x = setInterval(this.count, 1000);
   }
@@ -55,28 +54,39 @@ class CountDown extends Component {
   render() {
     const { days, seconds, hours, minutes } = this.state;
     return (
-      <div id="countdown" className="flex gap-6 text-primary_dark font-primary mb-10">
+      <div
+        id="countdown"
+        className="flex gap-6 text-primary_dark font-primary mb-10"
+      >
         <div className="col-4">
           <div className="flex flex-col items-center justify-center bg-primary_light rounded-md py-6 px-4 w-20 sm:w-16">
-            <p id="day" className="text-center text-5xl">{days}</p>
+            <p id="day" className="text-center text-5xl">
+              {days}
+            </p>
             <span className="text-center sm:text-xs">Days</span>
           </div>
         </div>
         <div className="col-4">
-        <div className="flex flex-col items-center justify-center bg-primary_light rounded-md py-6 px-4 w-20 sm:w-16">
-            <p id="hour" className="text-center text-5xl">{hours}</p>
+          <div className="flex flex-col items-center justify-center bg-primary_light rounded-md py-6 px-4 w-20 sm:w-16">
+            <p id="hour" className="text-center text-5xl">
+              {hours}
+            </p>
             <span className="text-center sm:text-xs">Hours</span>
           </div>
         </div>
         <div className="col-4">
-        <div className="flex flex-col items-center justify-center bg-primary_light rounded-md py-6 px-4 w-20 sm:w-16">
-            <p id="minute" className="text-center text-5xl">{minutes}</p>
+          <div className="flex flex-col items-center justify-center bg-primary_light rounded-md py-6 px-4 w-20 sm:w-16">
+            <p id="minute" className="text-center text-5xl">
+              {minutes}
+            </p>
             <span className="text-center sm:text-xs">Minutes</span>
           </div>
         </div>
         <div className="col-4">
-        <div className="flex flex-col items-center justify-center bg-primary_light rounded-md py-6 px-4 w-20 sm:w-16">
-            <p id="second" className="text-center text-5xl">{seconds}</p>
+          <div className="flex flex-col items-center justify-center bg-primary_light rounded-md py-6 px-4 w-20 sm:w-16">
+            <p id="second" className="text-center text-5xl">
+              {seconds}
+            </p>
             <span className="text-center sm:text-xs">Seconds</span>
           </div>
         </div>

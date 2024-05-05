@@ -1,5 +1,5 @@
 const airtableConstants = {
-    TEAM_TABLE: 'Team',
+    TEAM_TABLE: 'Team2024',
     SPONSORS_TABLE: 'Sponsors',
     SPEAKERSJUDGES_TABLE: 'Speakers&Judges',
     PRIZE_TABLE: 'Prizes',
