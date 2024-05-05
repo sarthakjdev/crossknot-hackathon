@@ -56,7 +56,7 @@ module.exports = [
   {
     themeId: 1,
     themeIcon: remote_world,
-    themeName: "Developer Tools",
+    themeName: "Professional Tooling",
     themeDescription: "",
   },
 ];
