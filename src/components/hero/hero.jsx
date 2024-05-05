@@ -54,11 +54,6 @@ export default function HeroSection() {
 
         {/* call-to-actions buttons */}
         <div className="flex md:flex-col items-center mt-8 gap-4 md:justify-center md:gap-4 md:mt-4">
-          <div
-            className="apply-button"
-            data-hackathon-slug="crossknothacks"
-            data-button-theme="dark"
-          ></div>
           <Link href="https://discord.gg/ScREataGaY">
             <a>
               <button className="flex items-center justify-around h-12 px-6 py-2 text-white bg-primary rounded-md border-primary border-2 hover:text-primary hover:bg-white transition-all duration-150">
@@ -66,6 +61,12 @@ export default function HeroSection() {
               </button>
             </a>
           </Link>
+          <button
+            disabled={true}
+            className="flex items-center justify-around h-12 px-6 py-2 text-white bg-primary rounded-md  border-primary border-2 hover:text-primary disabled:bg-primary_extra_light disabled:border-primary_extra_light disabled:text-primary_dark hover:bg-white transition-all duration-150"
+          >
+            Stay Tuned! Coming Soon
+          </button>
         </div>
         {/* <div className="flex items-center justify-center gap-4 ">
         <p className="uppercase text-card_text font-primary ">In collaboration with </p>
