@@ -22,7 +22,7 @@ export default function V1PostEventStats() {
 
   return (
     <section className="flex flex-col my-8 mx-20 sm:mx-2 bg-primary_extra_light max-w-[80rem] rounded-2xl py-10 px-8 w-full">
-      <SectionHead sectionName={"We hacked well in 2022, so as in 2024"} />
+      <SectionHead sectionName={"We hacked well in 2022"} />
 
       <div className="flex  items-center justify-evenly m-auto gap-6 lg:flex-col-reverse mt-6 max-w-5xl w-full">
         {stats.map((stat, index) => {

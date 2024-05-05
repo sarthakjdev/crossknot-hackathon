@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import footerImage from "../../../public/images/footer/footerImage.svg";
 import twitterIcon from "../../../public/images/footer/twitter.svg";
 import instaIcon from "../../../public/images/footer/instagram.svg";
 import ytIcon from "../../../public/images/footer/yt.svg";
@@ -15,10 +14,10 @@ const footerMenu = [
     name: "About",
     url: "/",
   },
-//   {
-//     name: "CrossKnot Blog",
-//     url: "https://blog.crossknotcommunity.tech/",
-//   },
+  //   {
+  //     name: "CrossKnot Blog",
+  //     url: "https://blog.crossknotcommunity.tech/",
+  //   },
   {
     name: "Code of Conduct",
     url: "https://github.com/crossknot-community/crossknot-hackathon/blob/main/CODE_OF_CONDUCT.md",
@@ -38,18 +37,13 @@ const socials = [
   },
   {
     name: "instagram",
-    url: "https://www.instagram.com/crossknothacks/",
+    url: "https://instagram.com/crossknotcomm",
     icon: instaIcon,
   },
   {
     name: "youtube",
     url: "https://www.youtube.com/channel/UCU79vWuo5sQEapub4bFvrlg",
     icon: ytIcon,
-  },
-  {
-    name: "mail",
-    url: "",
-    icon: mailIcon,
   },
   {
     name: "linkedin",
@@ -60,8 +54,8 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="flex items-center justify-center bg-footer_clr rounded-xl m-8 text-primary_dark px-14 py-6 md:flex-col md:px-8 font-primary">
-      <div className="flex flex-col flex-wrap mx-40">
+    <footer className="flex items-center justify-center bg-footer_clr rounded-xl m-8 text-primary_dark px-14 py-6 md:flex-col md:px-8 font-primary gap-6">
+      <div className="flex flex-col flex-1 pl-0 md:pl-10">
         {footerMenu.map((item) => {
           return (
             <Link href={item.url} key={item.name}>
