@@ -1,8 +1,3 @@
-import automation from "../../public/images/tracks/automation.svg";
-import blockChain from "../../public/images/tracks/blockchain.svg";
-import cyber_bully from "../../public/images/tracks/cyber_bullying.svg";
-import mental_health from "../../public/images/tracks/mental_health.svg";
-import no_code from "../../public/images/tracks/no_code.svg";
 import open_innovation from "../../public/images/tracks/open_innovation.svg";
 import remote_world from "../../public/images/tracks/remote_world.svg";
 
@@ -60,7 +55,7 @@ module.exports = [
   },
   {
     themeId: 1,
-    themeIcon: open_innovation,
+    themeIcon: remote_world,
     themeName: "Developer Tools",
     themeDescription: "",
   },
